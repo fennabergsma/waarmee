@@ -1,0 +1,31 @@
+%%%font%%%
+\usepackage{libertine}%font supporting unicode
+\usepackage[normalem]{ulem}%strikethrough
+
+%%%sections%%%
+\usepackage{titlesec}%add another level under section
+\setcounter{secnumdepth}{4}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+%%%trees%%%
+\usepackage[linguistics]{forest}
+\forestset{
+boom/.style={for tree={s sep=10mm, inner sep=0, l=0}}
+}
+
+%%%tables%%%
+\usepackage{diagbox}%diagonals
+\usepackage{tabularx,booktabs}%pretty tables
+\newcolumntype{Y}{>{\centering\arraybackslash}X}
+\usepackage{color, colortbl}
+\definecolor{Gray}{gray}{0.9}
+
+%%%examples%%%
+\usepackage{linguex}
+\renewcommand{\firstrefdash}{}
+
+%%%bibliography%%%
+\usepackage[backend=biber,style=authoryear,natbib=true]{biblatex}
