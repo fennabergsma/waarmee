@@ -457,7 +457,15 @@ In combination with wh-elements, the distal marker \tit{-a-} is used. For the pu
 {\draw (.east) node[right]{⇔ \tit{a}}; }
 \end{forest}\label{ex:entrya}
 
-I put \tit{w-} and \tit{-a-} aside for now, assuming they spell out the same syntactic structure in \tit{waarmee} `with what' and \tit{met wat} `with what'. This leaves \tit{er-mee} `with it' and \tit{met 't} `with it'.\footnote{\tit{'rmee} `with it' is often precdeded by an /ε/, which I assume to be for phonological reasons.}
+I put \tit{w-} and \tit{-a-} aside for now, assuming they spell out the same syntactic structure in \tit{waarmee} `with what' and \tit{met wat} `with what'. This leaves \tit{er-mee} `with it' and \tit{met 't} `with it'.\footnote{\tit{'rmee} `with it' is often precdeded by an /ε/, which I assume to be for phonological reasons. The vowel can be dropped under the right phonological circumstances.
+
+\exg. Ik heb 'r niks mee te maken.\\
+ I have there nothing with to do\\
+ `I have nothing to do with it.'
+ \z.
+
+\phantom{x}
+}
 
 \ex.
 \ag. (e)r -mee\\
@@ -517,7 +525,9 @@ I assume that the inanimate personal pronoun minimally contains the ontological 
                 [\tsc{f2}]
                 [\tsc{nomP}
                     [\tsc{f1}]
-                    [DP]
+                    [DP
+                        [...,roof]
+                    ]
                 ]
             ]
         ]
@@ -548,33 +558,54 @@ This lexical entry can lexicalize the \tsc{datP}, but also the \tsc{accP} and \t
  \ex. The Superset Principle \citet{starke2009}: \\
  A lexically stored tree matches a syntactic node iff the lexically stored tree contains the syntactic node.
 
-In other words, a lexically stored structure does not have to be identical to the syntactic structure. It is enough if the syntactic structure is contained in the lexically stored tree.
+In other words, a lexically stored structure does not have to be identical to the syntactic structure. It is enough if the syntactic structure is contained in the lexically stored tree. This has a as consequence that the lexical entry in \ref{ex:entryt} can also be inserted in \ref{ex:tacc} and \ref{ex:tnom}.
 
-\tit{Met} `with' can be used for as instrumental or comitative, as shown in \ref{ex:metinscom}.
+\ex.
+\a. \begin{forest} boom
+[\tsc{acc}P
+    [\tsc{f}2]
+    [\tsc{nom}P
+        [\tsc{f}1]
+        [\tsc{thingP}
+            [\tsc{thing}, roof]
+        ]
+    ]
+]
+\end{forest}\label{ex:tacc}
+\b. \begin{forest} boom
+[\tsc{nom}P
+    [\tsc{f}1]
+    [\tsc{thingP}
+        [\tsc{thing}, roof]
+    ]
+]
+\end{forest}\label{ex:tnom}
+
+Continuing with \tit{met} `with', which I have shown in this paper can be used to express instrumental. It can also be used as comitative, as shown in \ref{ex:metinscom}.
 
 \exg. Ik dans met hem.\\
  I dance with him\\
  `I am dancing with him.'\label{ex:metinscom}
 
-Again, due to the superset principle, \tit{met} `with' can be used for comitative and as instrumental case. It combines with the dative, so the lowest feature is \tsc{f4}.
+Case features are in a containment relation and instrumental contains all case features down to \tsc{f1}. Some of these features are expressed by the preposition, and other by the DP they combine with. As pronouns in Dutch can realize up to \tsc{f3}, the preposition starts from \tsc{f4}.
 
  \ex. \begin{forest} boom
  [\tsc{com}P
      [\tsc{f}5]
-     [\tsc{ins}P
-         [\tsc{f}4, roof]
-     ]
+     [\tsc{f}4]
  ]
  {\draw (.east) node[right]{⇔ \tit{met}}; }
  \end{forest}\label{ex:entrymet}
 
--------
-now we get to \tit{er-mee}. they have to be able to lexicalize the same features as in \tit{met 't}.
------
+In sum, the syntactic structure that \tit{met wat} `with what' realizes is the one in \ref{ex:stmetwat}.
 
- \tit{Er} `there' can be used as a locative.
+ ex. [ [ [ [ \tsc{thing} ] \tsc{f1} ] \tsc{f2} ] \tsc{f3} \tsc{f4} ]\label{ex:stmetwat}
 
- \exg. Ik ben er al geweest.\\
+Let us now turn to \tit{ermee} `with it', which lexicalizes the same structure as \tit{met 't} `with it', but with a different distribution.
+
+\tit{Er} `there' can be used as a locative.
+
+\exg. Ik ben er al geweest.\\
  I am there already been\\
  `I have already been there.'
 
@@ -590,9 +621,9 @@ I follow \cite{baunaz2018} in assuming that the ontological category \tsc{locati
  {\draw (.east) node[right]{⇔ \tit{(ə)r}}; }
  \end{forest}\label{ex:entryr}
 
-So \tit{met} expresses \tsc{f}4 and \tsc{f5}, and \tit{(ə)r} expresses \tsc{thing} and \tsc{f}1 to \tsc{f}3. \tit{(ə)r} only expresses \tsc{thing}. \tit{Ermee} and \tit{met 't} express the same features, which leaves \tsc{f}1 to \tsc{f}5 for \tit{mee}.
+Via the superset principle, \tit{er} can be used to realize the feature \tsc{thing} as well, as it is contained in \tsc{locP}.
 
-And! Nanosyntax encodes the difference between prefixes and suffixes by the difference in the shape of the lexical tree. \tit{-mee} follows \tit{er}, so I am going to call it a suffix. So:
+So far, \tit{er} `there' only realizes the feature \tsc{thing} from the structure in \ref{ex:stmetwat}. This leaves \tit{f1} to \tsc{f4} to be realized by \tit{-mee}. I give the lexical tree in \ref{ex:entrymee}.
 
 \ex. \begin{forest} boom
 [\tsc{com}P
@@ -605,16 +636,46 @@ And! Nanosyntax encodes the difference between prefixes and suffixes by the diff
                 [\tsc{f}2]
                 [\tsc{nom}P
                     [\tsc{f}1]
-                    [\phantom{x}]
                 ]
             ]
         ]
     ]
 ]
 {\draw (.east) node[right]{⇔ \tit{mee}}; }
-\end{forest}\label{ex:entrymee1}
+\end{forest}\label{ex:entrymee}
 
+Note that there are two differences between the lexical entry in \ref{ex:entrymet} and \ref{ex:entrymee}. First, the lexical entry for \tit{mee} `with' in \ref{ex:entrymee}, in addition to the one for \tit{met} `with' in \ref{ex:entrymet}, contains the features \tsc{f1}, \tsc{f2} and \tsc{f3}.
+Second, the lexical entry in \ref{ex:entrymet} has a binary bottom, and the lexical entry in \ref{ex:entrymee} has a unary bottom. Nanosyntax distinguishes prefixes and suffixes by distinguishing these types of lexical entries. This is the crucial differences needed for the Dutch instrumental.
+\tit{Met} `with' is a prefix (preposition), so it has a binary bottom, and \tit{-mee} `with' is a suffix, so it needs a unary bottom. In the next section I show how this works in a derivation.
+\footnote{For completeness, \tit{mee} `with' has to be blocked from combining with full DPs and animate pronouns (reference). For now I assume that these pronouns spell out an additional feature \tit{σ} that is not realized by \tit{mee} `with' but only by \tit{met} `with'. Full DPs combine in addition with a zero marker for dative case. This way \tit{mee} `with' does not compete with \tit{met} `anymore'. I left this features out in this paper, at is does not contribute to the main point.}
+\footnote{Giving \tit{met} `with' and \tit{mee} `with' two distinct lexical entries has as a consquence that the phonological overlap between them seems like a coincidence. I leave it for future research to capture this observation.}
+\footnote{I do not address the ordering difference of the wh-element and the adposition. A topic related to (but not relevant for) this paper is the different positioning of identical adpositions in Dutch. In \ref{ex:dutchin}, \tit{in} changes meaning dependent on whether it procedes or follows the DP, it is respectively locational or directional.
 
+\ex.\label{ex:dutchin}
+\ag. Ik klim in de boom.\\
+ I climb in the tree\\
+ `I am climbing in the tree.'
+\bg. Ik klim de boom in.\\
+ I climb the tree in\\
+ `I am climbing into the tree.'
+
+The different positioning of the adpositions in \tsc{r}-pronouns is driven by spellout and is, therefore, meaningless. However, the topic might be related. In almost all cases the preposition does not change form when it combines with an \tsc{r}-pronoun, e.g. \tit{in}. If this proposal is on the right track, such elements can be used as either a prefix and as a suffix. A lexical entry as in \ref{ex:presuf} would be a candidate for such an element.
+
+\ex. \begin{forest} boom
+[XP
+    [XP
+        [X,roof]
+    ]
+    [YP
+        [Y]
+    ]
+]
+{\draw (.east) node[right]{⇔ \tit{in}}; }
+\end{forest}\label{ex:presuf}
+
+I leave it to future research to determine whether this is a feasible solution.}
+
+Table \ref{tbl:withfeatures} gives an overview of the distribution of the features in \tit{met wat} `with what' and \tit{waarmee} `with what'. In both cases, \tit{w-} and \tit{-a-} are the realization of the same morpheme. The difference between the two expressions lies in the distribution of the case features. \tit{Mee} `with' realizes all of them, and \tit{met} `with' only the top two. The residues are realized by respectively \tit{er} `there' and \tit{'t} `it'.
 
 \begin{table}[ht]
 	\center
@@ -622,15 +683,16 @@ And! Nanosyntax encodes the difference between prefixes and suffixes by the diff
 	\begin{minipage}{0.56\linewidth}
 		\begin{tabularx}{\textwidth}{ccccccc}
 		\toprule
-    \phantom{\tsc{wh}}  & \phantom{\tsc{deix}}                    & \phantom{\tsc{f}4}  & \phantom{\tsc{f}3} & \phantom{\tsc{f}2}  & \phantom{\tsc{f}1}  & \phantom{\tsc{thing}} \\
-		%\midrule
+    \tsc{wh}  & \tsc{deix}                     & \tsc{f}4  & \tsc{f}3 & \tsc{f}2  & \tsc{f}1  & \tsc{thing} \\
+		\midrule
     \tit{w}   & \multicolumn{1}{|c|}{\tit{a}}  & \tit{met} & \multicolumn{4}{|c}{\tit{(ə)t}}                \\\hline
     \tit{w}   & \multicolumn{1}{|c|}{\tit{a}}  & \multicolumn{4}{c|}{\tit{mee}}               & \tit{(ə)r}  \\
     \bottomrule
 \end{tabularx}
 \end{minipage}
-\end{table}\label{tbl:nofeatures}
+\end{table}\label{tbl:withfeatures}
 
+In the next section I put all features back together in a derivation and I show how \tit{waarmee} `with what' surfaces when all features form a constituent. \tit{Met wat} `with what' appears when the functional sequence is disrubted.
 
 
 
@@ -668,53 +730,58 @@ And! Nanosyntax encodes the difference between prefixes and suffixes by the diff
 % \end{forest}»
 
 
-
-
 \subsection{Putting it back together}
 
+Before I show that \tit{waarmee} `with what' is used when all features form a proper constituent, I need to make some assumptions about the spellout process in Nanosyntax explicit.
 
-
-Spellout
+First of all, when two lexical entries are both candicates for spellout, the most specific is inserted, following the Elsewhere Condition:
 
 \ex. The Elsewhere Condition (\citealt{kiparsky1973}, formulated as in \citealt{caha2020}):\\
 When two entries can spell out a given node, the more specific entry wins. Under the Superset Principle governed insertion, the more specific entry is the one which has fewer unused features
 
-Spellout algorithm \citep{starke2018}
+Second, spellout happens in a cyclic derivation, following a spellout algorithm \citep{starke2018}. After each instance of merge, spellout takes place. If no spellout exist for the phrase created by the newly added feature, evacuations movements specified in the spellout algorithm take place. The algorithm is given in \ref{ex:spellout}.
 
-\ex. Merge F and
+\ex. Merge F and \label{ex:spellout}
  \a. Spell out FP
  \b. If (a) fails, attempt movement of the spec of the complement of \tsc{f}, and retry (a)
  \b. If (b) fails, move the complement of \tsc{f}, and retry (a)
 
+When a new match is found, it overrides previous spellouts.
+
 \ex. Cyclic Override \citep{starke2018}:\\
 Lexicalisation at a node XP overrides any previous match at a phrase contained in XP.
+
+If the spellout procedure in \ref{ex:spellout} fails, backtracking takes place.
 
 \ex. Backtracking \citep{starke2018}:
 When spellout fails, go back to the previous cycle, and try the next option for that cycle.
 
+If backtracking also does not help, a specifier is constructed.
+
 \ex. Spec Formation \citep{starke2018}:\\
 If Merge F has failed to spell out (even after backtracking), try to spawn a new derivation providing the feature F and merge that with the current derivation, projecting the feature F at the top node.
 
+With this theoretical background in the back of our minds, we can turn to the derivation. I first show how \tit{ermee} `with it' is constructed. I leave out \tit{w-} and \tit{-a-}, because it unnessisarily complicates the story.
+\footnote{I assume the actual functional sequence to be \ref{ex:fseq}.
 
+\ex. [ [ [ [ [ [ \tsc{thing} ] \tsc{deix} ] W ] \tsc{f1} ] \tsc{f2} ] \tsc{f3} \tsc{f4} ]\label{ex:fseq}
+\z.
 
+\phantom{x}
 
-The functional sequence of \tit{ermee}.
+}
 
-\ex. \tsc{f}4 > \tsc{f}3 > \tsc{f}2 > \tsc{f}1 > \tsc{thing}
-
-
-
-We start with \tsc{thing}. This is realized as \tit{(ə)r}, because it has less junk than \tit{(ə)t}.
+We start with \tsc{thing}. The two candidates here are \ref{ex:entryt} and \ref{ex:entryr}. Following the Elsewhere Condition, \ref{ex:entryr} wins the competition because it contains less unused material.
 
 \ex.
 \begin{forest} boom
  [\tsc{thingP}
      [\tsc{thing}, roof]
  ]
-{\draw (.east) node[right]{⇔ \tit{(ə)r}}; }
-\end{forest}
+{\draw (.east) node[right]{⇒ \tit{(ə)r}}; }
+\end{forest}\label{ex:thingspellout}
 
-\tsc{f}1 is merged. \tit{(ə)r} is no longer a candidate, but \tit{(ə)t} is. So the spellout is overridden.
+In the next step, \tsc{f}1 is merged. \ref{ex:entryr} is no longer a candidate because it does not contain \tsc{f1}. \ref{ex:entryt} still is a candidate, because it contains all features in \ref{ex:thingf1}. The spellout is overridden and the structure is realized as \tit{'t}.
 
 \ex. \begin{forest} boom
 [\tsc{nom}P
@@ -723,10 +790,10 @@ We start with \tsc{thing}. This is realized as \tit{(ə)r}, because it has less 
        [\tsc{thing}, roof]
    ]
 ]
-{\draw (.east) node[right]{⇔ \tit{(ə)t}}; }
-\end{forest}
+{\draw (.east) node[right]{⇒ \tit{(ə)t}}; }
+\end{forest}\label{ex:thingf1}
 
-\tsc{f}2 is merged, which can still be realizd by \tit{(ə)t}.
+Then \tsc{f}2 is merged. This structure can still be realizd by \tit{'t}.
 
 \ex. \begin{forest} boom
 [\tsc{accP}
@@ -738,10 +805,10 @@ We start with \tsc{thing}. This is realized as \tit{(ə)r}, because it has less 
        ]
    ]
 ]
-{\draw (.east) node[right]{⇔ \tit{(ə)t}}; }
+{\draw (.east) node[right]{⇒ \tit{(ə)t}}; }
 \end{forest}
 
-Idem for \tsc{f}3.
+In the next step \tsc{f3} is merged, the structure is still spelled out as \tit{'t}.
 
 \ex. \begin{forest} boom
 [\tsc{datP}
@@ -756,10 +823,10 @@ Idem for \tsc{f}3.
        ]
     ]
 ]
-{\draw (.east) node[right]{⇔ \tit{(ə)t}}; }
+{\draw (.east) node[right]{⇒ \tit{(ə)t}}; }
 \end{forest}
 
-Now \tsc{f}4 is merged. No candidate for phrasal spellout, no candidate after complement movement.
+Then \tsc{f4} is merged, as shown in \ref{ex:f4no}. \ref{ex:entryt} can no longer spell the structure out, because it does not contain \tsc{f4}. Moreover, there is no candidate to spell out the structure as it is, so evacuation movement takes place. According to the spellout algorithm, the first evacuation movement to be tried is spec-to-spec movement. However, there is no specfier in this structure, so this does not apply. The second movement option is complement movement. The complement of \tsc{f4} moves to the specifier of \tsc{insP}, resulting in the structure in \ref{ex:f4comp}. The lexicon does not contain an entry with \tsc{insP} which contains only \tsc{f4}.\footnote{\tit{Met} `with' is not a candidate, because the syntactic structure has a unary bottom and the lexical structure has a binary bottom.}
 
 \ex.
 \a. \begin{forest} boom
@@ -778,10 +845,10 @@ Now \tsc{f}4 is merged. No candidate for phrasal spellout, no candidate after co
         ]
     ]
 ]
-{\draw (.east) node[right]{⇔ }; }
-\end{forest}
+{\draw (.east) node[right]{⇒ }; }
+\end{forest}\label{ex:f4no}
 \b. \begin{forest} boom
-[\phantom{x}
+[\tsc{datP}
     [\tsc{datP}
         [\tsc{f}3]
         [\tsc{accP}
@@ -794,84 +861,78 @@ Now \tsc{f}4 is merged. No candidate for phrasal spellout, no candidate after co
            ]
         ]
     ]
-    {\draw (.east) node[right]{⇔ \tit{(ə)t}}; }
+    {\draw (.east) node[right]{⇒ \tit{(ə)t}}; }
     [\tsc{insP}
         [\tsc{f}4]
     ]
-    {\draw (.east) node[right]{⇔ }; }
+    {\draw (.east) node[right]{⇒ }; }
 ]
-\end{forest}
+\end{forest}\label{ex:f4comp}
 
-The next step in the algorithm is backtracking. We try the next option for the cycle in which \tsc{f}3 was merged. This option is complement movement. However, there is no lexical entry that fits, so we try the next option.
+As no match can be found, backtracking is triggered. The derivation goes back to the previous cycle, and the next option for that cycle is tried. In this case, that is after the merge of \tsc{f3}. There is no specifier, so there is no spec-to-spec movement. Complement movement is tried, showed in \ref{ex:f3comp}. However, there is no match in the lexicon for an \tsc{datP} that contains only \tsc{f3}.
 
-show here
+\begin{forest} boom
+[\tsc{accP}
+    [\tsc{accP}
+       [\tsc{f}2]
+       [\tsc{nom}P
+           [\tsc{f}1]
+           [\tsc{thingP}
+               [\tsc{thing}, roof]
+           ]
+       ]
+    ]
+    {\draw (.east) node[right]{⇒ \tit{(ə)t}}; }
+    [\tsc{datP}
+        [\tsc{f}3]
+    ]
+    {\draw (.east) node[right]{⇒ }; }
+]
+\end{forest}\label{ex:f3comp}
 
-The exact same happens for \tsc{f}2.
+Backtracking proceeds further, into the cycle in which \tsc{f2} was merged. Again there is no specifier to be moved, and complement movement does not give any results.
 
-show here
-
-Now for \tsc{f}1 it is different. There is a candidate when we try complement movemement, namely \tsc{thing} is realized as \tit{(ə)r} and \tsc{f}1 is spelled out as \tit{∅}
+The derivation ends up backtracking into the cycle in which \tsc{f1} was merged. At this stage, \tsc{thing} was realized as \tit{'r}. Here there is again no specifier, but complement movement provides a structure that is fit for a lexical entry, namely: \ref{ex:entrymee}.
 
 \ex. \begin{forest} boom
-[\phantom{x}
+[\tsc{nomP}
    [\tsc{thingP}
        [\tsc{thing}, roof]
    ]
-   {\draw (.east) node[right]{⇔ \tit{(ə)r}}; }
+   {\draw (.east) node[right]{⇒ \tit{(ə)r}}; }
    [\tsc{nom}P
        [\tsc{f}1]
    ]
-   {\draw (.east) node[right]{⇔ \tit{∅}}; }
+   {\draw (.east) node[right]{⇒ \tit{mee}}; }
 ]
 \end{forest}
 
-Merge \tsc{f}2, there is no candidate for phrasal spellout, we try spec to spec movement and get a match:
+The feature \tsc{f}2 is merged again. The structure cannot be spelled out as a whole, so spec-to-spec movement is tried. In that configuation \tit{f2} can be realized together with \tsc{f1} as \tit{mee}.
 
 \ex. \begin{forest} boom
-[\phantom{x}
+[\tsc{accP}
    [\tsc{thingP}
        [\tsc{thing}, roof]
    ]
-   {\draw (.east) node[right]{⇔ \tit{(ə)r}}; }
+   {\draw (.east) node[right]{⇒ \tit{(ə)r}}; }
    [\tsc{acc}P
        [\tsc{f}2]
        [\tsc{nom}P
            [\tsc{f}1]
        ]
    ]
-   {\draw (.east) node[right]{⇔ \tit{∅}}; }
+   {\draw (.east) node[right]{⇒ \tit{mee}}; }
  ]
 \end{forest}
 
-Idem for \tsc{f}3.
+The same happens for \tsc{f3} and \tsc{f4}, and the complete structure is realizes as shown in \ref{ex:spelloutermee}.
 
 \ex. \begin{forest} boom
-[\phantom{x}
-   [\tsc{thingP}
-       [\tsc{thing}, roof]
-   ]
-   {\draw (.east) node[right]{⇔ \tit{(ə)r}}; }
-   [\tsc{dat}P
-       [\tsc{f}3]
-       [\tsc{acc}P
-           [\tsc{f}2]
-           [\tsc{nom}P
-               [\tsc{f}1]
-           ]
-       ]
-   ]
-   {\draw (.east) node[right]{⇔ \tit{∅}}; }
-]
-\end{forest}
-
-Now \tsc{f}4 is merged. No phrasal spellout, but there is a match after spec-to-spec movement. However, is is not \tit{∅} anymore, but the inserted morpheme is \tit{mee}.
-
-\ex. \begin{forest} boom
-[\phantom{x}
+[\tsc{insP}
     [\tsc{thingP}
        [\tsc{thing}, roof]
     ]
-    {\draw (.east) node[right]{⇔ \tit{(ə)r}}; }
+    {\draw (.east) node[right]{⇒ \tit{(ə)r}}; }
     [\tsc{insP}
        [\tsc{f}4]
        [\tsc{dat}P
@@ -884,79 +945,95 @@ Now \tsc{f}4 is merged. No phrasal spellout, but there is a match after spec-to-
            ]
        ]
     ]
-    {\draw (.east) node[right]{⇔ \tit{mee}}; }
+    {\draw (.east) node[right]{⇒ \tit{mee}}; }
+]
+\end{forest}\label{ex:spelloutermee}
+
+Skipping over the irrelevant details of how \tit{w-} and \tit{-a-} end up in their positions, the structure for \tit{waarmee} `with what' look as in \ref{ex:spelloutwaarmee}.
+\footnote{I assume that WP and \tsc{deixP} are both complex specifiers that are created after \tsc{thing} is spelled out in \ref{ex:thingspellout}. In after each merge after that, backtracking always takes place, the complex specifier is detached from the structure and the case features are spelled out together with or as a suffix on \tsc{thing}.}
+\footnote{A consequence of analyzing \tit{mee} `with' as a suffix is that \tit{r} and \tit{-mee} always form a constituent to the exclusion of \tit{w-} and \tit{-a-}. This is problematic because \tit{waar} `where' can move leaving \tit{mee} `with' behind. The only way to resolve the situation would be to assume that \tit{mee} `with' is evacuated and \tit{waar} `where' remnant moves after that.}
+
+\ex. \begin{forest} boom
+[\tsc{WP}
+    [\tsc{WP}
+        [\tsc{W}, roof]
+    ]
+    {\draw (.east) node[right]{⇒ \tit{w}}; }
+    [\tsc{deixP}
+        [\tsc{deixP}
+            [\tsc{deix}, roof]
+        ]
+        {\draw (.east) node[right]{⇒ \tit{a}}; }
+        [\tit{insP}
+            [\tsc{thingP}
+               [\tsc{thing}, roof]
+            ]
+            {\draw (.east) node[right]{⇒ \tit{(ə)r}}; }
+            [\tsc{insP}
+               [\tsc{f}4]
+               [\tsc{dat}P
+                   [\tsc{f}3]
+                   [\tsc{acc}P
+                       [\tsc{f}2]
+                       [\tsc{nom}P
+                           [\tsc{f}1]
+                       ]
+                   ]
+               ]
+            ]
+            {\draw (.east) node[right]{⇒ \tit{mee}}; }
+        ]
+    ]
+]
+\end{forest}\label{ex:spelloutwaarmee}
+
+So far I showed how \tit{waarmee} `with what' is derived if all syntactic features form a constituent. Next I address how this is blocked when the features do not form a proper constituent, and how the spellout is then \tit{met wat} `with what'.
+
+I start in a situation in which \tit{wat} `what' is part of a syntactic structure with the rest of a relative clause as a sister.
+
+\ex. \begin{forest} boom
+[CP
+    [CP
+        [...,roof]
+    ]
+    [\tsc{WP}
+        [\tsc{WP}
+            [\tsc{W}, roof]
+        ]
+        {\draw (.east) node[right]{⇒ \tit{w}}; }
+        [\tsc{deixP}
+            [\tsc{deixP}
+                [\tsc{deix}, roof]
+            ]
+            {\draw (.east) node[right]{⇒ \tit{a}}; }
+            [\tsc{accP}
+               [\tsc{f}2]
+               [\tsc{nom}P
+                   [\tsc{f}1]
+                   [\tsc{thingP}
+                       [\tsc{thing}, roof]
+                   ]
+               ]
+            ]
+            {\draw (.east) node[right]{⇒ \tit{(ə)t}}; }
+        ]
+    ]
 ]
 \end{forest}
 
-Then show here that this does not happen if not all features form a proper constituent. Spellout can just not target a constituent.
-
-
-
-
-I did not address the ordering difference of the wh-element and the adposition. A topic related to (but not relevant for) this paper is the different positioning of identical adpositions in Dutch. In \ref{ex:dutchin}, \tit{in} changes meaning dependent on whether it procedes or follows the DP, it is respectively locational or directional.
-
-\ex.\label{ex:dutchin}
-\ag. Ik klim in de boom.\\
- I climb in the tree\\
- `I am climbing in the tree.'
-\bg. Ik klim de boom in.\\
- I climb the tree in\\
- `I am climbing into the tree.'
-
-The different positioning of the adpositions in \tsc{r}-pronouns is driven by spellout and is, therefore, meaningless.
-
-
-
-
+If a dative feature is merged here, it will not be able to be spelled out. The only option to realize the features is to form to spawn a new derivation, to create a complex specifier. And that is exactly what forming the preposition \tit{met} `with' is.
 
 
 \section{Conclusion and discussion}
 
-So, the answer of how constituency connects to change in phonological form lies in one of the core assumptions of nanosyntax: phrasal spellout spells out constituents.
+In this paper, I discussed the distribution of \tit{waarmee} `met wat' and \tit{met wat} `with what' is mismatching free relatives. I showed that \tit{waarmee} `with what' appears when all features form a proper constituent, and \tit{met wat} `with what' if they do not.
 
-Just like Abels said: no preposition stranding, but extraction from the PP is ok!
+The described pattern follows from a core assumptions in Nanosyntax: phrasal spellout spells out constituents. Looking more into detail, \tit{waarmee} `with what' takes precedence over \tit{met wat} `with what' because \tit{mee} has the structure of a suffix. Following the spellout algorithm, \tit{'t} `it' is replaced by \tit{er}, so that it can combine with \tit{mee} `with'. The preposition \tit{met} `with' is only used if there is no other option to spell out the features.
 
+This proposal is in several aspects in accordance with earlier work.
+Just like \citet{riemsdijk1978}, I claim that \tsc{r}-pronouns originate as the complement of P. He argued that due to some kind of suppletion \tit{'t} `it' changes form to \tsc{er}, which is coincidentally also the locative in Dutch. In my proposal, this suppletion follows naturally from the regular spellout algorithm. Also, it is not a coincidence that the locative appears, as it is an item with little features that spells out \tsc{thing}.
+The current proposal differs from \citet{riemsdijk1978} in that it is not the whole complement of P is moved. Instead, only part of the complement of P is extracted, which is generally allowed, also in non-preposition stranding languages \citep{abels2003diss}.
 
-Van Riemsdijk said that R-pronouns are pronouns and they orginate in the complement of P. Due to \tsc{r}-movement they move to the spec of PP, and due to suppletion they change form, coincidentally to something identical to the locative. Full DPs cannot move to the spec of PP because they do not have access to that spec.
-
-I claim that this movement is not a special r-movement, but a movement driven by spellout. The suppletion also follows from the regular spellout algorithm, and it is the locative that is inserted.
-
-
-Koopman's account differ from Van Riemsdijk's in that she assumes \tsc{r}-pronouns obligatorily move to specPlace. The fact that locatives and \tsc{r}-pronouns are syncretic is not a surprise. They occur in the same structural configuration.
-
-Place does not make a lot of sense in \tit{waarmee}, because we do not have a place here.
-
-Abels says that this movement from the complement to the spec is not allowed. He argues that, instead, that R-words are base generated as the specifiers of distinguished class of zero-place prepositions. \tsc{r} is the complement of P and is subextracted from the complement of P (which is allowed, because it is subextraction and not extraction of it as a whole.)
-
-I agree with Abels in that \tit{r} is substracted from the complement of the preposition. However, I say that \tit{r} is actually the pronoun. What he refers to as an \tsc{r}-word is in Dutch \tit{w-aa-}, which I also assume is merged later.
-
-
-Now the difference in distribution between \tit{met wat} and \tit{waarmee} is going to follow from spellout. If we get higher than dative case, we need prepositions. Making prepositions is a very 'costly' operation in the langauge, it is the last resort option in the spellout procedure. Dutch also has forms that are not only prepositions, but can also function as postpositions. They are less 'costly'. To avoid building a complex specifier, different spellout options are used. That is why we get the \tsc{r}-pronoun in the picture. \tsc{r}-pronouns can combine with these postpositions.
-
-
-
-Open ends
-
-In the analysis laid out above it is a coincidence that \tit{mee} `with' and \tit{met} `with' look so much alike.
-
-Another topic I do not discuss is that in almost all cases the preposition does not change form when it combines with an \tsc{r}-pronoun, e.g. \tit{in}. If this proposal is on the right track, such elements can be used as either a prefix and as a suffix. A lexical entry as in \ref{ex:presuf} would be a candidate for such an element.
-
-\ex. \begin{forest} boom
-[XP
-    [XP
-        [X,roof]
-    ]
-    [YP
-        [Y]
-    ]
-]
-{\draw (.east) node[right]{⇔ \tit{in}}; }
-\end{forest}\label{ex:presuf}
-
-I leave it to future research to determine whether this is a feasible solution.
-
-
-still need to incorporate \tit{a} and \tit{w}. They can either come before case or after it.
 
 
 \printbibliography
