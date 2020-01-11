@@ -8,7 +8,8 @@
 \usepackage{fenna-files/commands}
 \bibliography{fenna-files/references}{}
 
-\title{\tit{Waarmee} vs. \tit{met wat}}
+\title{\tit{Waarmee} vs. \tit{met wat}\\
+Constituency spellout, r-pronouns}
 \author{Fenna Bergsma}
 \date{\today}
 
@@ -17,6 +18,7 @@
 \raggedright
 
 \maketitle
+
 
 
 
@@ -281,125 +283,16 @@ There are other contexts in which \tit{met wat} `with what' appears. This can be
 \b. [met [wat [X]]]
 \b. [met [[wat] [X]]]\label{ex:metwatfr}
 
-This section showed that being a proper constituent is a necessary requirement for \tit{waarmee} `with what' to surface. The next section elaborates on how proper constituency and spellout relate to each other.
-
-
-\section{\tit{Waarmee} `with what' as suppletion}\label{sec:suppletion}
-
 \tit{Met} `with' is a preposition that combines with full DPs and animate pronouns. \tit{Wat} `what' is a wh-element that appears as subject or object. There is no principled reason why \tit{met wat} `with what' should be ruled out. Previous work on \tsc{r}-pronoun has not given many insights, other than \citet{riemsdijk1978} postulating a filter that prohibits the existence of constituents consisting of prepositions and wh-elements or \citet{koopman2000} who makes reference to a different paradigm.
-
-In this section I start with showing a similar instance in which proper constituency and spellout go hand in hand. Then I show how these facts can be straightforwardly follow from the spellout algorithm in Nanosyntax. The section ends with showing how this logic can be applied to \tit{waarmee} `with what' and \tit{met wat} `with what'.
-
-In what follows I show another instance in which proper constituency influences spellout, namely suppletive negative forms in Korean, as discussed by \citet{chung2007}. The point is that suppletion only goes through when the relevant features form a proper constituent, and not when an additional structure intervenes.
-
-Sentences in Korean can be negated by the two negative prefixes \tit{ani} or \tit{mos}, as shown in \ref{ex:koreannegation}.
-
-\ex.\label{ex:koreannegation}
-\ag. ca -n -ta\\
- sleep -\tsc{pres} -\tsc{decl}\\
- `is sleeping'
-\bg. mos/an(i) ca -n -ta\\
- \tsc{neg} sleep -\tsc{pres} -\tsc{decl}\\
- `cannot sleep / is not sleeping' \hfill \citep{chung2007}
-
-The verb \tit{al-} `know' does not combine with any of the negative markers, but it it uses the suppletive stem \tit{molu.\tsc{neg}}. This is illustrated in \ref{ex:koreanknow}.
-
-\ex.\label{ex:koreanknow}
-\ag. al -n -ta\\
-know \tsc{-pres} \tsc{-decl}\\
-`know(s)'
-\bg. *mos/*an(i) al -n -ta\\
-\tsc{neg} know -\tsc{pres} -decl\tsc{}\\
-\bg. molu -n -ta\\
-\tsc{neg}.know -\tsc{pres} -\tsc{decl}\\
-`do(es) not / cannot know'\label{ex:molu} \hfill \citep{chung2007}
-
-When \tit{al-} `know' is causativized before it is negated, the regular stem is used again, shown in \ref{ex:knowcausneg}. \ref{ex:molucaus} illustrates that the suppletive stem \tit{molu-} is no longer grammatical.
-
-\ex.
-\ag. al -li-\\
- know -\tsc{caus}\\
- `let know, inform'
-\bg. ani/ mos al -li -ess -ta\\
- \tsc{neg} \tsc{neg} know -\tsc{caus} -\tsc{past} -\tsc{decl}\\
- `did not /could not inform'\label{ex:knowcausneg}
-\bg. *molu -li -ess -ta\\
- \tsc{neg}.know -\tsc{caus} -\tsc{past} -\tsc{decl}\\\label{ex:molucaus} \hfill \citep{chung2007}
-
-\citet{chung2007} points out that it cannot be phonological adjacency of the negation and \tit{al-} `know' that causes the suppletion in \ref{ex:molu}. The reason for that is that in \ref{ex:knowcausneg} \tit{al-} also follows the negation, but there is no suppletion. \citet{chung2007} suggests crucial difference has to do with in proper constituency.
-The structure of \ref{ex:molu} is given in \ref{ex:structuremolu}: Neg and \tit{al-} `know' form a proper constituent. \ref{ex:structurenegmolu} represents the structure of \ref{ex:knowcausneg}. Neg and \tit{al-} `know' no longer form a proper constituent, because \tsc{caus} is also part of the structure as the sister of \tit{al-} `know'.
-
-\ex.
-%%%
-\a. \begin{forest} boom
-[
-    [Neg]
-    [know]
-]
-\end{forest}\label{ex:structuremolu}
-\b. \begin{forest} boom
-[
-    [Neg]
-    [
-        [know]
-        [\tsc{caus}]
-    ]
-]
-\end{forest}\label{ex:structurenegmolu}
-
-\citet{caha2009} uses this pattern to argue in favor of a model with phrasal spellout rather than inserting phonology into terminal nodes, specifically Nanosyntax \citep{starke2009}. The idea is that the lexicon contains syntactic structures that are linked to a particular piece of phonology. If Korean has a lexical entry as in \ref{ex:entrymolu}, this can be inserted into the syntactic tree in \ref{ex:structuremolu}.
-
-\ex. \begin{forest} boom
-[
-    [Neg]
-    [know]
-]
-  {\draw (.east) node[right]{⇔ \tit{molu}}; }
-\end{forest}\label{ex:entrymolu}
-
-Since spellout targets constituent \citep{starke2009}, \ref{ex:entrymolu} is not inserted into the structure in \ref{ex:structurenegmolu}. \tsc{caus} is contained in the syntactic structure but not in the structure in the lexicon in \ref{ex:entrymolu}.
-
-The same logic can be applied to \tit{waarmee} `with what' and \tit{met wat} `with what'. The preposition and wh-element together form a proper constituent, as in \ref{ex:structurewaarmee}, or the embedded CP of the relative clause is a sister of the wh-element, as in \ref{ex:structuremetwat}.
-
-\ex.
-\a. \begin{forest} boom
-[
-    [P]
-    [Wh]
-]
-\end{forest}\label{ex:structurewaarmee}
-%%
-\b. \begin{forest} boom
-[
-    [P]
-    [
-        [Wh]
-        [CP
-            [...,roof]
-        ]
-    ]
-]
-\end{forest}\label{ex:structuremetwat}
-
-Assume we have a lexical entry for \tit{waarmee} `met wat' that look as \ref{ex:entrywaarmee}. This entry can only be inserted into \ref{ex:structurewaarmee}, because the lexical structure matches the syntactic structure. It cannot be into \ref{ex:structuremetwat}, because the lexical structure does not contain the CP.
-
-\ex. \begin{forest} boom
-[
-    [InsP]
-    [WhP]
-]
-  {\draw (.east) node[right]{⇔ \tit{waarmee}}; }
-\end{forest}\label{ex:entrywaarmee}
-
-What I have shown in this section is how proper constituency relates to a change in phonology. However, this analysis missed numerous phonological properties of \tit{waarmee} `with what' and \tit{met wat} `with what', e.g. that they both contain the morpheme \tit{wa}. Under the suppletion analysis above, one can the phonological form of \tit{waarmee} could just as well be completely phonologically unrelated. The point of presenting the problem like this is to illustrate that the distribution between \tit{waarmee} `with what' and \tit{met wat} `with what' can be captured as a matter of spellout.
 
 In the next section I decompose \tit{waarmee} `with what' and \tit{met wat} `with what'. I show that both spell out the same set of features, but the distribution is different.
 
 
-\section{A finer decomposition}\label{sec:finer}
 
-In this section I investigate the internal structure of \tit{waarmee} `with what' and \tit{met wat} `with what' to capture the phonological similarities between the two forms. First, I identify \tit{w} and \tit{a} as morphemes that appear in both expressions. Putting these two aside, I concentrate on \tit{ermee} `with it' and \tit{met 't} `with it'. I decompose these two expressions further, and end up arguing for a picture as shown in Table \ref{tbl:nofeatures}.
-The elements \tit{w} and \tit{a} express the same syntactic structure in both expressions. The elements \tit{met} and \tit{'t} together also express the same features as \tit{mee} and \tit{er} together, but the distribution differs. \tit{Met} expresses less structure than \tit{mee} and \tit{'t} expresses more structure than \tit{er}. It becomes clear that the \tit{er} in fact corresponds to the locative \tit{r} in Dutch.
+\section{Taking \tit{waarmee} and \tit{met wat} apart}
+
+In this section I investigate the internal structure of \tit{waarmee} `with what' and \tit{met wat} `with what' to capture the phonological similarities and differences between the two forms. First, I identify \tit{w} and \tit{a} as morphemes that appear in both expressions. Putting these two aside, I concentrate on \tit{ermee} `with it' and \tit{met 't} `with it'. I decompose these two expressions further, and end up arguing for a picture as shown in Table \ref{tbl:nofeatures}.
+The elements \tit{w} and \tit{a} express the same syntactic structure in both expressions. The elements \tit{met} and \tit{'t} together also express the same features as \tit{mee} and \tit{er} together, but the distribution differs. \tit{Met} expresses less structure than \tit{mee}, and \tit{'t} expresses more structure than \tit{er}. \tit{Met} is shown to be an prefix, and \tit{mee} is a suffix. It also becomes clear that the \tit{er} in fact corresponds to the locative \tit{r} in Dutch.
 
 \begin{table}[ht]
 	\center
@@ -417,12 +310,7 @@ The elements \tit{w} and \tit{a} express the same syntactic structure in both ex
 \end{minipage}
 \end{table}
 
-Finally, I put everything together and show how \tit{waarmee} `with what' is inserted if all features form a constituent, and \tit{met wat} `with what' if this is not the case.
-
-
-\subsection{Taking everything apart}
-
-In this section I decompose \tit{waarmee} `with what' and \tit{met wat} `with what'. The idea is that both expressions realize the same features, and \tit{waarmee} `with what' takes precedence when all features form a constituent. The morphemes I distinguish in \tit{waarmee} `with what' are \tit{w}, \tit{-aa-}, \tit{-r} and \tit{mee}. Within \tit{met wat} `with what' I distinguish \tit{met}, \tit{w}, \tit{a} and \tit{-t}. \ref{ex:decompose} shows this as well.
+ The idea is that both expressions realize the same features, and \tit{waarmee} `with what' takes precedence when all features form a constituent. The morphemes I distinguish in \tit{waarmee} `with what' are \tit{w}, \tit{-aa-}, \tit{-r} and \tit{mee}. Within \tit{met wat} `with what' I distinguish \tit{met}, \tit{w}, \tit{a} and \tit{-t}. \ref{ex:decompose} shows this as well.
 
 \ex.\label{ex:decompose}
 \a. w -aa -r -mee
@@ -696,6 +584,90 @@ In the next section I put all features back together in a derivation and I show 
 
 
 
+
+\section{Two mechanisms}
+
+\subsection{Suppletive obliques}
+
+\begin{table}[ht]
+	\center
+	\caption {Iron Ossetic pronoun and noun}
+	\begin{minipage}{0.56\linewidth}
+		\begin{tabularx}{\textwidth}{ccccccc}
+		\toprule
+              & 1.\tsc{sg}  & head    \\
+		\midrule
+    \tsc{nom} & æz          & sær-Ø   \\
+    \tsc{acc} & mæn-Ø       & sær-Ø   \\
+    \tsc{gen} & mæn (⁇?)    & sær-y   \\
+    \tsc{ins} & mæn-æj      & sær-æj  \\
+    \tsc{dat} & mæn-æn      & sær-æn  \\
+    \tsc{all} & mæn-mæ      & sær-mæ  \\
+    \tsc{ade} & mæn-yl      & sær-yl  \\
+    \tsc{eq}  & mæn-au      & sær-au  \\
+    \tsc{com} & mæn-imæ     & sær-imæ \\
+    \bottomrule
+\end{tabularx}
+\label{tbl:ossetic}
+\end{minipage}
+\end{table}
+
+now the question: is \tit{æz} a suppletive nominative or is \tit{mæn} the suppletive stem from the accusative on? ossetic has a way to tell: suspended affixation.
+
+What we see in (3-a) is an ordinary coordination of two phrases, each marked
+by a plural marker and a case marker. Suspended affixation is then illustrated in
+(3-b). It is a type of a coordination where the comitative case marker is located
+only on the second conjunct, with no change in interpretation. The first conjunct
+simply bears no case marker in such cases.
+
+
+\ex.
+\ag. bæx-t-imæ æmæ gæl-t-imæ\\
+horse-pl-com and ox-pl-com\\
+\bg. bæx-tæ æmæ gæl-t-imæ\\
+horse-pl and ox-pl-com\\
+`with horses and oxen' \hfill (Iron Ossetic, Erschler 2012: 165)
+
+doing this with 1\tsc{sg} shows that the bare stem is \tit{mæn}.
+
+\ex.
+\ag. mæn æmæ Zauyr-æn\\
+ 1.\tsc{sg} and Zaur-\tsc{dat}\\
+\bg. *æz æmæ Zauyr-æn\\
+ 1.\tbf{sg} and Zaur-\tsc{dat}\\
+ `me and Zaur' \hfill (Belyaev 2014: 39)
+
+\tit{mæn} is actually the caseless form, \tit{æz} is marked for nominative.
+
+
+my conclusion: Dutch has a suppletive form for nominative, accusative and dative. Then higher cases do not combine with that suppletive form, but with the unmarked form.
+
+'t
+'t
+'t
+er-van
+er-mee
+er-mee
+
+
+
+
+
+
+
+
+\subsection{Prefix or suffix}
+
+https://ling.auf.net/lingbuzz/001026
+
+
+
+
+
+
+
+
+
 % I do not care whether \tit{w} and \tit{a} are merged before or after.
 %
 % WHY DOES MEE MOVE? I DO NOT KNOW.
@@ -730,7 +702,7 @@ In the next section I put all features back together in a derivation and I show 
 % \end{forest}»
 
 
-\subsection{Putting it back together}
+\section{Showing it in a derivation}
 
 Before I show that \tit{waarmee} `with what' is used when all features form a proper constituent, I need to make some assumptions about the spellout process in Nanosyntax explicit.
 
