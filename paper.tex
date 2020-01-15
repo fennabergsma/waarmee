@@ -416,22 +416,25 @@ Let me start with the lexical entry for \tit{'t}. \tit{'t} `it' can be used as s
  \bg. Ik heb hem een klap gegeven.\\
   I have \tsc{3sg.m.acc} a hit given\\ with both alternatives. I work the proposal out with't  realizing all cases.
 
-For case, I follow \citet{caha2009} that case features case features are organized the containment relation in \ref{ex:casetree}. The higher, more complex cases contain the smaller, less complex cases.
+For case, I follow \citet{caha2009} that case features case features are organized the containment relation in \ref{ex:casetree}. The higher, more complex cases contain the smaller, less complex cases.\footnote{there has been discussion on the genitive. starke on two accusatives and two datives. this paper: only small accusative and dative and genitive is above both of them.}
 
  \ex. \label{ex:casetree}
  \begin{forest} boom
  [\tsc{comP}
-     [\tsc{f5}]
+     [\tsc{f6}]
      [\tsc{insP}
-         [\tsc{f4}]
-         [\tsc{datP}
-             [\tsc{f3}]
-             [\tsc{accP}
-                 [\tsc{f2}]
-                 [\tsc{nomP}
-                     [\tsc{f1}]
-                     [DP
-                         [...,roof]
+         [\tsc{f5}]
+         [\tsc{genP}
+             [\tsc{f4}]
+             [\tsc{datP}
+                 [\tsc{f3}]
+                 [\tsc{accP}
+                     [\tsc{f2}]
+                     [\tsc{nomP}
+                         [\tsc{f1}]
+                         [DP
+                             [...,roof]
+                         ]
                      ]
                  ]
              ]
@@ -556,100 +559,95 @@ The syntactic structure in \ref{ex:entryr} only has \tsc{loc} as an unused featu
 
 \subsubsection{\tit{Mee} vs. \tit{met}}
 
-Now we come to mee and met. the crucial distinction between these elements is that \tit{mee} is postposition and \tit{met} is a preposition. i show: (i) relation between these types of elements, (ii) how that is being modeled with movement, (iii) that post goes before pre (iv) how that is modeled in nano.
+The last two forms are \tit{mee} `with' and \tit{met} `with'. An important distinction between these two is that \tit{mee} appears after the element it combines with (\tsc{'r}), while \tit{met} appears before the element it combines with (\tit{'t}). I will analyze \tit{mee} as a postposition and \tit{met} as a preposition. In this section I discuss the relation between prepositions and postpositions, and how this is modeled with the case hierarchy in Nanosyntax \citep{caha2009}.
 
-I shows 't spells out all features. this does not always happen. languages also use prepositions/prefixes and postpositions/suffixes to express case. and the relation between them is not arbitrary.
+%$Now we come to mee and met. the crucial distinction between these elements is that \tit{mee} is postposition and \tit{met} is a preposition. i show: (i) relation between these types of elements, (ii) how that is being modeled with movement, (iii) that post goes before pre (iv) how that is modeled in nano.
+
+In the previous section I argued that \tit{'t} realizes case features up to \tsc{f3} (see \ref{ex:entryt}). However, case can also be expressed by prepositions (or prefixes) and postpositions (or suffixes). The division between which cases are expressed by prepositions and which are expressed by postpositions is not arbitrary.
 
 \ex. The preposition/postposition hierarchy
 \a. If the expression of a particular case in the Case sequence (below) involves a preposition, then all cases to its right do as well.
-\b. The Case sequence: \tsc{nom – acc – gen – dat – ins – com} \hfill \citep{2009}
+\b. The Case sequence: \tsc{nom – acc – dat – gen - ins – com} \hfill \citep{caha2009}
 
-can be modeled in the sense that a dp moves to a certain height.
+The result of that is that a PP can contain a preposition and a suffix, as in \ref{ex:loffel}. The dative suffix is used with a genitive preposition.
 
-\exg. mit ein-em Löffel\\
-with a-\tsc{dat.sg} spoon\\
-`with a spoon' \hfill (German)
+\exg. von ein-em Löffel\\
+von a-\tsc{dat.sg} spoon\\
+`of a spoon' \hfill (German)\label{ex:loffel}
 
-in german, dp moves above the dp. go back to dutch, hard to say above dative, because instrumental sometimes pre sometimes post.
+With the case hierarchy in nanosyntax this can be modeled by letting the DP move as high as above the \tsc{datP} in the syntactic structure. The features below the \tsc{datP} are realized as a suffix, and the features above \tsc{datP} are realized as a preposition. I gloss over the fact that \tit{-em} is realized on the article and not
 
-There is variation, between languages but also within languages. another instance is bulgarian.
+There is variation with respect to how high a DP can move in the structure, both between languages and within languages. An example from the latter comes from Bulgarian. \ref{ex:bulpron} shows that pronouns can take the suffix \tit{-i} to realize dative, but full DPs need a preposition \tit{na} `to'.
 
-\ex.
+\ex.\label{ex:bulgarian}
 \ag. Tazi duma m-i e nepoznata.\\
 that word I-\tsc{dat} is unfamiliar\\
-`That word is unfamiliar to me.'
-\bg. *Tazi duma e nepoznata sina mi.\\
-that word is unfamiliar son my\\
-`That word is unfamiliar my son.'
+`That word is unfamiliar to me.'\label{ex:bulpron}
 \bg. Tazi duma e nepoznata na sina mi.\\
 that word is unfamiliar to son my\\
-`That word is unfamiliar to my son.'
+`That word is unfamiliar to my son.'\label{ex:buldpto}
 
-Here pronouns can take a postposition, but full DPs cannot. In Dutch it was slightly different: inanimate pronouns can take the postposition, but animates and full DPs cannot.
+In Dutch the split is not between pronouns and full DPs but between inanimate pronouns on the one hand and animates and full DPs on the other hand. In Dutch, inanimate pronouns combine with the postposition \tit{-mee} (see \ref{ex:dutchina} and not with the preposition \tit{met} (see \ref{ex:dutchinmet}). Animate pronouns and full DPs, however, combine with the preposition met, as shown in \ref{ex:dutchan} and \ref{ex:dutchdp}. The use of the postposition \tit{-mee} is ungrammatical (see \ref{ex:dutchanmee} and \ref{ex:dutchdpmee}).
 
-give lexical entry for that.
-say why it does not work with full DPs and with animates.
+\ex.
+\ag. Ik schilder 'r-mee.\\
+ I paint there-with\\
+ `I am painting with it.'\label{ex:dutchina}
+\bg. *Ik schilder met 't\\
+ I paint with it\\
+ `I am painting with it.'\label{ex:dutchinmet}
+\bg. Ik schilder samen met hem.\\
+ I paint together with him\\
+ `I am painting with him.'\label{ex:dutchan}
+\bg. *Ik schilder samen 'm-mee.\\
+ I paint together him-with\\
+ `I am painting together with him.'\label{ex:dutchanmee}
+\bg. Ik schilder samen met de man.\\
+ I paint together with the man\\
+ `I am painting together with the man.'\label{ex:dutchdp}
+\bg. *Ik schilder samen de man-mee.\\
+ I paint together the man-with\\
+ `I am painting together with the man.'\label{ex:dutchdpmee}
 
+The next issue I turn to is what the lexical entry of \tit{mee} looks like. This needs to capture three facts. \tit{Mee} combines with \tit{'r}, it is a postposition, and it does not combine with animates and full DPs.
 
-so what happens with these instead? they get the prepostiion. prepositions have to be encoded differently in the syntax, because they ARE different, they occur before the expression. as you saw the -mee has a unary bottom, so it can only arise as a result of movement. pre elements have a binary bottom.
+First, \tit{mee} expresses instrumental (and comitative) case and it combines with \tit{'r}.\footnote{For reasons of space I leave \tsc{f6} out of the lexical entries and discussion, even though \tit{mee} and \tit{met} can also express comitative.} So far, \tit{'r} `there' only realizes the feature \tsc{thing}. This leaves Σ and \tsc{f1} to \tsc{f5} to be realized by \tit{mee}. I give the lexical tree of \tit{mee} in \ref{ex:entrymee}.
 
+\ex. \begin{forest} boom
+    [\tsc{insP}
+        [\tsc{f}6]
+        [\tsc{genP}
+            [\tsc{f4}]
+            [\tsc{dat}P
+                [\tsc{f}3]
+                [\tsc{acc}P
+                    [\tsc{f}2]
+                    [\tsc{nom}P
+                        [\tsc{f}1]
+                        [ΣP
+                            [Σ]
+                        ]
+                    ]
+                ]
+            ]
+        ]
+    ]
+{\draw (.east) node[right]{⇔ \tit{mee}}; }
+\end{forest}\label{ex:entrymee}
 
+This leads us to the second point: \tit{mee} is a postposition. Notice that the foot of the structure has a singleton feature. Nanosyntax distinguishes pre-elements from post-elements by the shape of their lexical entry. As a result, the whether an element is pre or post is lexically stored as follows from the spellout procedure. I illustrate this in Section \ref{sec:derivation}. Post-elements have a unary bottom (i.e. the foot of the tree is a single feature), so they can only appear as the result of movement. Post-elements have a binary bottom (i.e. the foot of the tree consists of two features), so they cannot be a candidate as a result of movement.
 
+Why does \tit{mee} not combine with animates and full DPs? I claim that has to do with the bottom feature of the lexical entry of \tit{mee}. Full DPs do not take features related to pronominal strength. According to the Superset Principle, a lexical tree can also match a syntactic tree with a subpart of the features, but a tree can only shrink from the top, so \tit{mee} will always realize Σ. I have a less clear answer to why animates do not combine with \tit{mee}. The crucial difference between animates and inanimates if gender features. For now I assume that gender features are situated between Σ and \tsc{f1}. The lexical entry of \tit{mee} includes both these features, so any features are incompatible with \tit{mee}. So far I do not have independent evidence for placing gender features between features of pronominal strength and case, and I leave this for future research.
 
+So far I discussed \tit{mee} is a postposition, which follows \tit{'r} and is stored with a unary bottom. \tit{Met}, on the other hand, is a preposition, it precedes \tit{'t}, so it should be stored with a binary bottom. The highest case feature \tit{'t} can realize is \tsc{f3}, so the preposition realizes all higher cases up to \tsc{f5}.
 
-
-
-i'm going to crucially rely on the order in the spellout algoritm
-
-
-
-
-MOVE TO LATER
-
-Spellout happens in a cyclic derivation, following a spellout algorithm \citep{starke2018}. After each instance of merge, spellout takes place. If no spellout exist for the phrase created by the newly added feature, evacuation movements specified in the spellout algorithm take place. The algorithm is given in \ref{ex:spellout}.
-
-\ex. Merge F and \label{ex:spellout}
- \a. Spell out FP
- \b. If (a) fails, attempt movement of the spec of the complement of \tsc{f}, and retry (a)
- \b. If (b) fails, move the complement of \tsc{f}, and retry (a)
-
-When a new match is found, it overrides previous spellouts.
-
-\ex. Cyclic Override \citep{starke2018}:\\
-Lexicalisation at a node XP overrides any previous match at a phrase contained in XP.
-
-
-
-
-
-If not match can be found, a specifier is constructed.
-
-\ex. Spec Formation \citep{starke2018}:\\
-If Merge F has failed to spell out (even after backtracking), try to spawn a new derivation providing the feature F and merge that with the current derivation, projecting the feature F at the top node.
-
-For case, I follow \citet{caha2009} that case features case features are organized the containment relation in \ref{ex:casetree}. The higher, more complex cases contain the smaller, less complex cases.
-
-
-
-In other words, a lexically stored structure does not have to be identical to the syntactic structure. It is enough if the syntactic structure is contained in the lexically stored tree. This has a as consequence that the lexical entry in \ref{ex:entryt} can also be inserted in syntactic structures as \ref{ex:tacc} and \ref{ex:tnom}.
-
-
-
-Nanosyntax distinguishes prepositiones and postpositiones by distinguishing these types of lexical entries. This is the crucial difference needed for the Dutch instrumental.
-
-It differs per language and within a language how high a DP can move. Everything below is a postposition on the noun, everything higher is a preposition. Consider German full DP. Moves as high as above the dative, instrumental is expressed with a preposition.
-
-but like i said, it also differs within a language, for example look at bulgarian here!
-
-
-
-
-
-The same intuition will hold for Dutch.
--mee is going to be a postposition that will be able to attach to 'r, but it will not to full DPs and animates.
-
-
-
+\ex. \begin{forest} boom
+[\tsc{ins}P
+    [\tsc{f}5]
+    [\tsc{f}4]
+]
+{\draw (.east) node[right]{⇔ \tit{met}}; }
+\end{forest}\label{ex:entrymet}
 
 
 
@@ -657,7 +655,7 @@ The same intuition will hold for Dutch.
 
 \subsubsection{Backtracking}
 
-If the spellout procedure in \ref{ex:spellout} fails, backtracking takes place.
+If the spellout procedure in fails, backtracking takes place.
 
 \ex. Backtracking \citep{starke2018}:\\
 When spellout fails, go back to the previous cycle, and try the next option for that cycle.
@@ -736,13 +734,6 @@ Continuing with \tit{met} `with', which I have shown in this paper can be used t
 
 Case features are in a containment relation and instrumental contains all case features down to \tsc{f1}. Some of these features are expressed by the preposition, and other by the DP they combine with. As pronouns in Dutch can realize up to \tsc{f3}, the preposition starts from \tsc{f4}.
 
- \ex. \begin{forest} boom
- [\tsc{com}P
-     [\tsc{f}5]
-     [\tsc{f}4]
- ]
- {\draw (.east) node[right]{⇔ \tit{met}}; }
- \end{forest}\label{ex:entrymet}
 
 In sum, the syntactic structure that \tit{met wat} `with what' realizes is the one in \ref{ex:stmetwat}.
 
@@ -750,29 +741,7 @@ In sum, the syntactic structure that \tit{met wat} `with what' realizes is the o
 
 Let us now turn to \tit{'rmee} `with it', which lexicalizes the same structure as \tit{met 't} `with it', but with a different distribution.
 
-So far, \tit{'r} `there' only realizes the feature \tsc{thing} from the structure in \ref{ex:stmetwat}. This leaves \tsc{f1} to \tsc{f4} to be realized by \tit{mee}. I give the lexical tree in \ref{ex:entrymee}.
 
-\ex. \begin{forest} boom
-[\tsc{com}P
-    [\tsc{f}5]
-    [\tsc{insP}
-        [\tsc{f}4]
-        [\tsc{dat}P
-            [\tsc{f}3]
-            [\tsc{acc}P
-                [\tsc{f}2]
-                [\tsc{nom}P
-                    [\tsc{f}1]
-                    [ΣP
-                        [Σ]
-                    ]
-                ]
-            ]
-        ]
-    ]
-]
-{\draw (.east) node[right]{⇔ \tit{mee}}; }
-\end{forest}\label{ex:entrymee}
 
 Note that there are two differences between the lexical entry in \ref{ex:entrymet} and \ref{ex:entrymee}. First, the lexical entry for \tit{mee} `with' in \ref{ex:entrymee}, in addition to the one for \tit{met} `with' in \ref{ex:entrymet}, contains the features \tsc{f1}, \tsc{f2} and \tsc{f3}.
 Second, the lexical entry in \ref{ex:entrymet} has a binary bottom, and the lexical entry in \ref{ex:entrymee} has a unary bottom. \tit{Met} `with' is a preposition (preposition), so it has a binary bottom, and \tit{mee} `with' is a postposition, so it needs a unary bottom. In the next section I show how this works in a derivation.\footnote{For completeness, \tit{mee} `with' has to be blocked from combining with full DPs and animate pronouns (reference). For now I assume that these pronouns spell out an additional feature \tit{σ} that is not realized by \tit{mee} `with' but only by \tit{met} `with'. Full DPs combine in addition with a zero marker for dative case. This way \tit{mee} `with' does not compete with \tit{met} `anymore'. I left this features out in this paper, at is does not contribute to the main point.}$^,$\footnote{Giving \tit{met} `with' and \tit{mee} `with' two distinct lexical entries has as a consequence that the phonological overlap between them seems like a coincidence. Moreover, in almost all cases the preposition does not change form when it combines with an \tsc{r}-pronoun, e.g. \tit{in}. If this proposal is on the right track, elements as \tit{in} can be used as either a preposition and as a postposition. A lexical entry as in \ref{ex:presuf} would be a candidate for such an element.
@@ -862,7 +831,7 @@ In the next section I put all features back together in a derivation and I show 
 % \end{forest}»
 
 
-\section{Showing it in a derivation}
+\section{Showing it in a derivation}\label{sec:derivation}
 
 Repeat spellout algorithm
 
