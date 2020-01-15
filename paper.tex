@@ -404,6 +404,18 @@ Let me start with the lexical entry for \tit{'t}. \tit{'t} `it' can be used as s
  I have \tsc{3sg.n.dat} a hit given\\
  `I gave it a hit.'
 
+ Pronouns in other genders alternate between nominative (non-oblique) and accusative/dative (oblique) in these contexts, illustrated in \ref{ex:hemsubobj}.
+
+ \ex.\label{ex:hemsubobj}
+ \ag. Hij staat in de hal.\\
+  \tsc{3sg.m.nom} stands in the hallway\\
+  `He is standing in the hallway.'
+ \bg. Ik zie hem.\\
+  I see \tsc{3sg.m.acc}\\
+  `I see it.'
+ \bg. Ik heb hem een klap gegeven.\\
+  I have \tsc{3sg.m.acc} a hit given\\ with both alternatives. I work the proposal out with't  realizing all cases.
+
 For case, I follow \citet{caha2009} that case features case features are organized the containment relation in \ref{ex:casetree}. The higher, more complex cases contain the smaller, less complex cases.
 
  \ex. \label{ex:casetree}
@@ -438,7 +450,20 @@ For case, I follow \citet{caha2009} that case features case features are organiz
   he and this/that stand in the corner\\
   `He and it are standing in the corner.'\label{ex:datcoordinated}
 
-I assume that the \tit{'t} contains the ontological category \tsc{thing} \citep{kayne2005}. The feature Σ indicates that the pronoun is a weak pronoun. I leave possible number and gender features out because they do not play a role in this paper. The morpheme \tit{'t} can act as nominative, accusative and dative, as I showed in \ref{ex:tsubobj}. Taking this all together, \tit{'t} has the lexical entry given in \ref{ex:entryt}.
+I assume that the \tit{'t} contains the ontological category \tsc{thing} \citep{kayne2005}. The feature Σ indicates that the pronoun is a weak pronoun. I leave possible number and gender features out because they do not play a role in this paper. The morpheme \tit{'t} can act as nominative, accusative and dative, as I showed in \ref{ex:tsubobj}.\footnote{ Another possibility is to claim that \tit{'t} can only spell out \tsc{thing} and Σ and it combines with a zero suffix for the cases up to dative. This could be the same zero marker that full DPs combine with.
+
+\ex.
+\ag. De kast-∅ staat in de hal.\\
+ the cabinet-\tsc{nom} stands in the hallway\\
+ `The cabinet is standing in the hallway.'
+\bg. Ik zie de kast-∅.\\
+ I see the cabinet-\tsc{acc}\\
+ `I see the cabinet.'
+\bg. Ik heb de kast-∅ een klap gegeven.\\
+ I have the cabinet-\tsc{dat} a hit given\\
+ `I gave the cabinet a hit.'
+
+The proposed account fares equally well with both alternatives. I work the proposal out with \tit{'t} realizing the cases up to the dative.} Taking this all together, \tit{'t} has the lexical entry given in \ref{ex:entryt}.
 
 \ex. \begin{forest} boom
  [\tsc{dat}P
@@ -521,7 +546,7 @@ Notice already here that, via the superset principle, \tit{'r} can be used to re
 {\draw (.east) node[right]{⇒ \tit{'r}}; }
 \end{forest}\label{ex:rthing}
 
-This is due to the Elsewhere condition. The idea is that when two lexical entries are both candidates for spellout, the most specific is inserted.
+This is due to the Elsewhere Condition. The idea is that when two lexical entries are both candidates for spellout, the most specific is inserted.
 
 \ex. The Elsewhere Condition (\citealt{kiparsky1973}, formulated as in \citealt{caha2020}):\\
 When two entries can spell out a given node, the more specific entry wins. Under the Superset Principle governed insertion, the more specific entry is the one which has fewer unused features
@@ -531,16 +556,23 @@ The syntactic structure in \ref{ex:entryr} only has \tsc{loc} as an unused featu
 
 \subsubsection{\tit{Mee} vs. \tit{met}}
 
+Now we come to mee and met. the crucial distinction between these elements is that \tit{mee} is postposition and \tit{met} is a preposition. i show: (i) relation between these types of elements, (ii) how that is being modeled with movement, (iii) that post goes before pre (iv) how that is modeled in nano.
+
+I shows 't spells out all features. this does not always happen. languages also use prepositions/prefixes and postpositions/suffixes to express case. and the relation between them is not arbitrary.
+
 \ex. The preposition/postposition hierarchy
 \a. If the expression of a particular case in the Case sequence (below) involves a preposition, then all cases to its right do as well.
 \b. The Case sequence: \tsc{nom – acc – gen – dat – ins – com} \hfill \citep{2009}
+
+can be modeled in the sense that a dp moves to a certain height.
 
 \exg. mit ein-em Löffel\\
 with a-\tsc{dat.sg} spoon\\
 `with a spoon' \hfill (German)
 
+in german, dp moves above the dp. go back to dutch, hard to say above dative, because instrumental sometimes pre sometimes post.
 
-There is variation, between languages but also within languages.
+There is variation, between languages but also within languages. another instance is bulgarian.
 
 \ex.
 \ag. Tazi duma m-i e nepoznata.\\
@@ -553,10 +585,13 @@ that word is unfamiliar son my\\
 that word is unfamiliar to son my\\
 `That word is unfamiliar to my son.'
 
-show lexical entry for this?
-
 Here pronouns can take a postposition, but full DPs cannot. In Dutch it was slightly different: inanimate pronouns can take the postposition, but animates and full DPs cannot.
 
+give lexical entry for that.
+say why it does not work with full DPs and with animates.
+
+
+so what happens with these instead? they get the prepostiion. prepositions have to be encoded differently in the syntax, because they ARE different, they occur before the expression. as you saw the -mee has a unary bottom, so it can only arise as a result of movement. pre elements have a binary bottom.
 
 
 
@@ -564,11 +599,12 @@ Here pronouns can take a postposition, but full DPs cannot. In Dutch it was slig
 
 
 
+i'm going to crucially rely on the order in the spellout algoritm
 
 
 
 
-
+MOVE TO LATER
 
 Spellout happens in a cyclic derivation, following a spellout algorithm \citep{starke2018}. After each instance of merge, spellout takes place. If no spellout exist for the phrase created by the newly added feature, evacuation movements specified in the spellout algorithm take place. The algorithm is given in \ref{ex:spellout}.
 
@@ -583,29 +619,6 @@ When a new match is found, it overrides previous spellouts.
 Lexicalisation at a node XP overrides any previous match at a phrase contained in XP.
 
 
-\ex.
-\a. \begin{forest} boom
-[\tsc{ins{}}
-    [\tsc{f5}, roof]
-]
-{\draw (.east) node[right]{⇔ \tit{mit}}; }
-\end{forest}\label{ex:mit}
-\b. \begin{forest} boom
-[\tsc{dat}P
-    [\tsc{f}3]
-    [\tsc{acc}P
-        [\tsc{f}2]
-        [\tsc{nom}P
-            [\tsc{f}1]
-        ]
-    ]
-]
-{\draw (.east) node[right]{⇔ \tit{-em}}; }
-\end{forest}\label{ex:em}
-
-
-
-The distinction between prepositions and postpositions.
 
 
 
