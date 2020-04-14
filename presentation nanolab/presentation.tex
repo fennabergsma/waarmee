@@ -1,0 +1,762 @@
+\documentclass[xcolor=dvipsnames,10pt]{beamer}
+
+\usepackage{../fenna-files/packages}
+\usepackage{../fenna-files/commands}
+\bibliography{../fenna-files/references}{}
+
+\geometry{paperwidth=140mm,paperheight=105mm}
+%
+% Choose how your presentation looks.
+%
+% For more themes, color themes and font themes, see:
+% http://deic.uab.es/~iblanes/beamer_gallery/index_by_theme.html
+%
+\mode<presentation>
+{
+	\usetheme{Berlin}      % or try Darmstadt, Madrid, Warsaw, ...
+	\definecolor{goethe}{rgb}{0,0.37,0.66}
+	\usecolortheme[named=goethe]{structure}
+	%\usefonttheme{serif}  % or try serif, structurebold, ...
+	\setbeamertemplate{navigation symbols}{}
+	\setbeamertemplate{caption}[numbered]
+	\resetcounteronoverlays{exx}
+}
+
+
+
+%gets rid of bottom navigation bars
+\setbeamertemplate{footline}{}
+
+%gets rid of navigation symbols
+%\setbeamertemplate{navigation symbols}{}
+
+
+\addtobeamertemplate{navigation symbols}{}{%
+	\usebeamerfont{footline}%
+	\usebeamercolor[fg]{footline}%
+	\hspace{1em}%
+	\insertframenumber/\inserttotalframenumber
+}
+
+
+\title{The \tsc{r}-pronoun and postposition \tit{waar-mee} in Dutch}
+\author{Fenna Bergsma}
+\date{Nanolab\\ \today}
+\institute{Goethe-Universität Frankfurt}
+
+
+
+\begin{document}
+
+\begin{frame}
+	\titlepage
+
+\centering{
+	\includegraphics[width=0.4\textwidth]{dfg-logo}
+	\hspace{2cm}
+	\includegraphics[width=0.3\textwidth]{goethe-logo}}
+\end{frame}
+
+% \section{Introduction}
+
+\begin{frame}
+
+\exg. Ik schilder met een kwast.\\
+ I paint with a brush\\
+ `I am painting with a brush.'\label{ex:metdp}
+
+ \pause
+
+\exg. Ik zie 't.\\
+ I see it\\
+ `I see it.'\label{ex:tverb}
+
+\pause
+
+\exg. *Ik schilder met 't.\\
+ I paint with it\\
+ `I am painting with it.'
+
+\end{frame}
+
+
+\begin{frame}
+
+\exg. *Ik schilder met 't.\\
+ I paint with it\\
+ `I am painting with it.'\label{ex:neemett}
+
+\pause
+
+\exg. Ik schilder r -mee.\\
+ I paint there -with\\
+ `I am painting with it.'\label{ex:jarmee}
+
+\end{frame}
+
+
+\begin{frame}
+
+\centering{\Large{Why *\tit{met 't}?}}
+
+\end{frame}
+
+
+\begin{frame}
+
+Instrumental in Dutch
+\ex. *met t
+
+\ex. r mee
+
+\pause
+
+\begin{itemize}
+	\item r-pronouns and locatives syncretic \pause
+	\item \tit{met} becomes \tit{mee} \pause
+	\item position of adposition
+\end{itemize}
+
+\end{frame}
+
+% \section{R-pronouns and constituency}
+
+% \subsection{Distribution of \tsc{r}-pronouns}
+
+\begin{frame}
+
+\exg. Ik zie haar/hem.\\
+ I see her/him\\
+ `I see her/him.'\label{ex:aniobj}
+
+\exg. Ik zie 't.\\
+ I see it\\
+ `I see it.'\label{ex:inaniobj}
+
+\end{frame}
+
+
+\begin{frame}
+
+\exg. Ik schilder samen met haar/hem.\\
+ I paint together with her/him\\
+ `I am painting together with her/him.'\label{ex:prepani}
+
+\exg. *Ik schilder met 't.\\
+ I paint with it\\
+ `I am painting with it.'\label{ex:prephet}
+
+\exg. Ik schilder 'r -mee.\\
+ I paint there -with\\
+ `I am painting with it.'\label{ex:preper}
+
+\exg. *Ik schilder mee 'r.\\
+ I paint with there\\
+ `I am painting with it.'\label{ex:erprep}
+
+\end{frame}
+
+
+\begin{frame}
+
+\ex.
+\ag. Ik zit 'r op.\\
+ I sit there on\\
+ `I am sitting on it.
+\bg. *Ik zit op 't.\\
+ I sit on it\\
+ `I am sitting on it.
+
+\ex.
+ \ag. Hij zwemt 'r in.\\
+  he swims it-in\\
+  `He is swimming there it.'
+ \bg. *Hij zwemt in 't.\\
+  he swims in it\\
+  `He is swimming in it.'
+
+\end{frame}
+
+
+
+\begin{frame}
+
+\exg. Wat zie jij?\\
+ what see you\\
+ `What do you see?'\label{ex:wat}
+
+\exg. *Met wat schilder jij?\\
+ with what paint you\\
+ `What are you painting with?'\label{ex:metwat}
+
+\exg. Waar -mee schilder jij?\\
+ where with paint you with\\
+ `What are you painting with?'\label{ex:waar-mee}
+
+\end{frame}
+
+
+\begin{frame}
+
+\ex.\label{ex:headed}
+\ag. Ik schilder met de kwast waar -mee jij ook schildert.\\
+ I paint with the brush where with you also paint\\
+ `I am painting with the brush that you are painting with too.'
+\bg. *Ik schilder met de kwast met wat jij ook schildert.\\
+ I paint with the brush with what you also paint\\
+ `I am painting with the brush that you are painting with too.'
+
+\ex.\label{ex:headless}
+\ag. Ik schilder waar -mee jij ook schildert.\\
+ I paint where with you also paint\\
+ `I am painting with what you are painting with too.'
+\bg. *Ik schilder met wat jij ook schildert.\\
+ I paint with what you also paint\\
+ `I am painting with what you are painting with too.'
+
+\end{frame}
+
+\begin{frame}
+
+\ex.
+\ag. Ik heb gekocht waar -mee jij schildert.\\
+ I have bought where with you paint\\
+ `I bought what you are painting with.'\label{ex:gekochtwaar-mee}
+\bg. *Ik heb gekocht met wat jij schildert.\\
+ I have bought with what you paint\\
+ `I bought what you are painting with.'\label{ex:gekochtmetwat}
+
+\pause
+
+\ex.\label{ex:schildermet}
+\ag. *Ik schilder waar -mee jij hebt gekocht.\\
+ I paint where with you have bought\\
+ `I paint with what you bought.'\label{ex:schilderwaar-mee}
+\bg. Ik schilder met wat jij hebt gekocht.\\
+ I paint with what you have bought\\
+ `I paint with what you bought.'\label{ex:schildermetwat}
+
+
+\end{frame}
+
+
+\begin{frame}
+
+\ex.
+\ag. Ik schilder 'r -mee.\\
+ I paint there with\\
+ `I am painting with it.'\label{ex:const1}
+\bg. Waar -mee schilder jij?\\
+where with paint you with\\
+ `What are you painting with?'\label{ex:const2}
+\bg. Ik schilder met de kwast [waar -mee jij ook schildert].\\
+ I paint with the brush where with you also paint\\
+ `I am painting with the brush that you are painting with too.'\label{ex:const3}
+\bg. Ik schilder [waar -mee jij ook schildert].\\
+ I paint where with you also paint\\
+ `I am painting with what you are painting with too.'\label{ex:const4}
+
+\pause
+
+\ex.
+\a. [[ik] [[schilder] ['r -mee]]]\label{ex:const1stage}
+\b. [[jij] [[schilder] [waar-mee]]]\label{ex:const2stage}
+\b. [[jij] [[ook] [[schilder] [waar-mee]]]]\label{ex:const3stage}
+
+\end{frame}
+
+
+\begin{frame}
+
+\ex.
+\ag. Ik koop het schilderij.\\
+ I buy the painting\\
+ `I am buying the painting.'\label{ex:kopen}
+\bg. Ik schilder met een kwast.\\
+ I paint with a brush\\
+ `I am painting with a brush.'\label{ex:schilderen}
+
+ \pause
+
+\end{frame}
+
+\ex.
+\ag. Ik koop het schilderij.\\
+ I buy the painting\\
+ `I am buying the painting.'\label{ex:kopen}
+\bg. Ik schilder met een kwast.\\
+ I paint with a brush\\
+ `I am painting with a brush.'\label{ex:schilderen}
+
+\pause
+
+\exg. Ik heb gekocht [waar -mee jij schildert].\\
+ I have bought where with you paint\\
+ `I bought what you are painting with.'\label{ex:mismatchwaar-mee}
+
+\pause
+
+\exg. Ik schilder met [wat jij hebt gekocht].\\
+I paint with what you have bought\\
+`I paint with what you bought.'\label{ex:mismatchmetwat}
+
+\begin{frame}
+
+\exg. [Met [wat [voor [potloden]]] teken jij?\\
+ with what for pencils draw you\\
+ `What kind of pencils do you with?'\label{ex:watwasfur}
+\exg. Ik wil graag thee [met [wat [suiker]]].\\
+ I want please tea with some sugar\\
+ `I would like to have tea with some sugar.'\label{ex:watindef}
+
+\pause
+
+\ex.\label{ex:summaryconst}
+\a. [[met] [wat]] → [waar-mee]\label{ex:waar-meefr}
+\b. [met [wat [X]]]\label{ex:metwatx}
+\b. [met [[wat] [X]]]\label{ex:metwatfr}
+
+\end{frame}
+
+
+\begin{frame}
+
+\ex.\label{ex:decompose}
+\ag. w -aa -r -mee\\
+\tsc{w} -\tsc{deix} -\tsc{loc} -\tsc{ins}\\
+\bg. met w -a -t\\
+\tsc{ins} \tsc{w} -\tsc{deix} -\tsc{n.sg}\\
+\z.
+\z.
+
+\end{frame}
+
+\begin{frame}
+
+\ex. \begin{forest}
+[\tsc{wP}
+    [W, roof]
+]
+{\draw (.east) node[right]{⇔ \tit{w}}; }
+\end{forest}\label{ex:entryw}
+
+\ex. \begin{forest}
+[\tsc{deixP}
+    [\tsc{deix}, roof]
+]
+{\draw (.east) node[right]{⇔ \tit{a}}; }
+\end{forest}\label{ex:entrya}
+
+\end{frame}
+
+
+\begin{frame}{Case}
+
+\ex.\label{ex:tsubobj}
+\ag. 't Staat in de hal.\\
+ \tsc{3sg.n.nom} stands in the hallway\\
+ `It is standing in the hallway.'\label{ex:tnoclitic}
+\bg. Ik zie 't.\\
+ I see \tsc{3sg.n.acc}\\
+ `I see it.'
+\bg. Ik heb 't een klap gegeven.\\
+ I have \tsc{3sg.n.dat} a hit given\\
+ `I gave it a hit.'
+
+\ex.\label{ex:hemsubobj}
+\ag. Hij staat in de hal.\\
+\tsc{3sg.m.nom} stands in the hallway\\
+`He is standing in the hallway.'
+\bg. Ik zie hem.\\
+I see \tsc{3sg.m.acc}\\
+`I see it.'
+\bg. Ik heb hem een klap gegeven.\\
+I have \tsc{3sg.m.dat} a hit given\\
+`I gave him a hit.'
+
+\end{frame}
+
+
+
+
+\begin{frame}
+
+\ex.
+\ag. *Hij en 't staan in de hoek.\\
+ he and it stand in the corner\\
+ `He and it are standing in the corner.'\label{ex:tcoordinated}
+\bg. Hij en dit/dat staan in de hoek.\\
+ he and this/that stand in the corner\\
+ `He and it are standing in the corner.'\label{ex:datcoordinated}
+
+\end{frame}
+
+
+\begin{frame}
+
+\ex. \begin{forest} boom
+ [\tsc{datP}
+     [\tsc{f3}]
+     [\tsc{accP}
+         [\tsc{f2}]
+         [\tsc{nomP}
+             [\tsc{f1}]
+             [ΣP
+                 [Σ]
+                 [\tsc{thingP}
+                     [\tsc{thing}, roof]
+                 ]
+             ]
+         ]
+     ]
+ ]
+ {\draw (.east) node[right]{⇔ \tit{'t}}; }
+ \end{forest}\label{ex:entryt}
+
+\end{frame}
+
+
+\begin{frame}
+
+\exg. Ik ben 'r al geweest.\\
+ I am there already been\\
+ `I have already been there.'
+
+\ex. \begin{forest} boom
+[\tsc{loc}P
+   [\tsc{location}]
+   [\tsc{thingP}
+       [\tsc{thing}, roof]
+   ]
+]
+{\draw (.east) node[right]{⇔ \tit{'r}}; }
+\end{forest}\label{ex:entryr}
+
+\end{frame}
+
+
+\begin{frame}
+
+	\begin{tabularx}{\textwidth}{ccccccc}
+	\toprule
+						& \tsc{n.sg} \\
+	\midrule
+	\tsc{nom} & 't         \\
+	\tsc{acc} & 't         \\
+	\tsc{dat} & 't         \\
+	\tsc{ins} & -r -mee    \\
+	\bottomrule
+\end{tabularx}
+
+
+\end{frame}
+
+
+\begin{frame}
+
+\ex. \begin{forest} boom
+[\tsc{insP}
+    [\tsc{f4}]
+    [\tsc{datP}
+        [\tsc{f3}]
+        [\tsc{accP}
+            [\tsc{f2}]
+            [\tsc{nomP}
+                [\tsc{f1}]
+                [ΣP
+                    [Σ]
+                ]
+            ]
+        ]
+    ]
+]
+{\draw (.east) node[right]{⇔ \tit{-mee}}; }
+\end{forest}\label{ex:entrymee}
+
+\end{frame}
+
+
+\begin{frame}
+
+\ex. \begin{forest} boom
+[\tsc{insP}
+    [\tsc{f4},roof]
+]
+{\draw (.east) node[right]{⇔ \tit{met}}; }
+\end{forest}\label{ex:entrymet}
+
+\end{frame}
+
+
+\begin{frame}
+
+\begin{forest} boom
+ [\tsc{thingP}
+     [\tsc{thing}, roof]
+ ]
+{\draw (.east) node[right]{⇒ \tit{'r}}; }
+\end{forest}\label{ex:thingspellout}
+
+\pause
+
+\begin{forest} boom
+[ΣP
+   [Σ]
+   [\tsc{thingP}
+       [\tsc{thing}, roof]
+   ]
+]
+{\draw (.east) node[right]{⇒ \tit{'t}}; }
+\end{forest}\label{ex:thingf1}
+
+\end{frame}
+
+\begin{frame}
+
+	\begin{forest} boom
+	[\tsc{nomP}
+	   [\tsc{f1}]
+	   [ΣP
+	       [Σ]
+	       [\tsc{thingP}
+	           [\tsc{thing}, roof]
+	       ]
+	   ]
+	]
+	{\draw (.east) node[right]{⇒ \tit{'t}}; }
+	\end{forest}
+
+\end{frame}
+
+
+\begin{frame}
+
+\begin{forest} boom
+[\tsc{datP}
+    [\tsc{f3}]
+    [\tsc{accP}
+       [\tsc{f2}]
+       [\tsc{nomP}
+           [\tsc{f1}]
+           [ΣP
+               [Σ]
+               [\tsc{thingP}
+                   [\tsc{thing}, roof]
+               ]
+           ]
+       ]
+    ]
+]
+{\draw (.east) node[right]{⇒ \tit{'t}}; }
+\end{forest}
+
+\end{frame}
+
+
+
+
+\begin{frame}
+
+\begin{forest} boom
+[\tsc{insP}
+    [\tsc{f4}]
+    [\tsc{datP}
+        [\tsc{f3}]
+        [\tsc{accP}
+           [\tsc{f2}]
+           [\tsc{nomP}
+               [\tsc{f1}]
+               [ΣP
+                   [Σ]
+                   [\tsc{thingP}
+                       [\tsc{thing}, roof]
+                   ]
+               ]
+           ]
+        ]
+    ]
+]
+{\draw (.east) node[right]{⇒ }; }
+\end{forest}\label{ex:f4no}
+
+\end{frame}
+
+
+\begin{frame}
+
+\begin{forest} boom
+[ΣP
+	 [\tsc{thingP}
+			 [\tsc{thing}, roof]
+	 ]
+	 {\draw (.east) node[right]{⇒ \tit{'r}}; }
+	 [ΣP
+			 [Σ]
+	 ]
+	 {\draw (.east) node[right]{⇒ \tit{-mee}}; }
+]
+\end{forest}
+
+\end{frame}
+
+
+\begin{frame}
+
+\begin{forest} boom
+[\tsc{nomP}
+    [\tsc{f1}]
+    [ΣP
+       [\tsc{thingP}
+           [\tsc{thing}, roof]
+       ]
+       [ΣP
+           [Σ]
+       ]
+    ]
+]
+{\draw (.east) node[right]{⇒}; }
+\end{forest}\label{ex:f1again}
+
+\end{frame}
+
+
+\begin{frame}
+
+\begin{forest} boom
+[\tsc{nomP}
+   [\tsc{thingP}
+       [\tsc{thing}, roof]
+   ]
+   {\draw (.east) node[right]{⇒ \tit{'r}}; }
+   [\tsc{nomP}
+       [\tsc{f1}]
+       [ΣP
+           [Σ]
+       ]
+   ]
+   {\draw (.east) node[right]{⇒ \tit{-mee}}; }
+ ]
+\end{forest}\label{ex:f1spec}
+
+\end{frame}
+
+
+\begin{frame}
+
+\begin{forest} boom
+[\tsc{insP}
+    [\tsc{thingP}
+       [\tsc{thing}, roof]
+    ]
+    {\draw (.east) node[right]{⇒ \tit{'r}}; }
+    [\tsc{insP}
+       [\tsc{f4}]
+       [\tsc{datP}
+           [\tsc{f3}]
+           [\tsc{accP}
+               [\tsc{f2}]
+               [\tsc{nomP}
+                   [\tsc{f1}]
+                   [ΣP
+                       [Σ]
+                   ]
+               ]
+           ]
+       ]
+    ]
+    {\draw (.east) node[right]{⇒ \tit{-mee}}; }
+]
+\end{forest}\label{ex:spellout'rmee}
+
+\end{frame}
+
+
+\begin{frame}
+
+\begin{forest} boom
+[\tsc{\tsc{wP}}
+		[\tsc{\tsc{wP}}
+				[\tsc{w}, roof]
+		]
+		{\draw (.east) node[right]{⇒ \tit{w}}; }
+		[\tsc{deixP}
+				[\tsc{deixP}
+						[\tsc{deix}, roof]
+				]
+				{\draw (.east) node[right]{⇒ \tit{a}}; }
+				[\tsc{insP}
+						[\tsc{thingP}
+							 [\tsc{thing}, roof]
+						]
+						{\draw (.east) node[right]{⇒ \tit{'r}}; }
+						[\tsc{insP}
+							 [\tsc{f4}]
+							 [\tsc{datP}
+									 [\tsc{f3}]
+									 [\tsc{accP}
+											 [\tsc{f2}]
+											 [\tsc{nomP}
+													 [\tsc{f1}]
+													 [ΣP
+															 [Σ]
+													 ]
+											 ]
+									 ]
+							 ]
+						]
+						{\draw (.east) node[right]{⇒ \tit{-mee}}; }
+				]
+		]
+]
+\end{forest}\label{ex:spelloutwaar-mee}
+
+\end{frame}
+
+
+
+
+\begin{frame}
+
+\exg. Ik heb gekocht waar jij mee schildert.\\
+ I have bought waar you with paint\\
+ `I bought what you are painting with.'\label{ex:meestranded}
+
+\exg. *Ik heb gekocht waar jij schildert mee.\\
+ I have bought waar you paint with\\
+ `I bought what you are painting with.'\label{ex:meeend}
+
+\end{frame}
+
+
+\begin{frame}
+
+\ex.
+\a. \tit{met} --- \tit{mee}
+\b. \tit{tot} --- \tit{toe}
+
+\ex. CVt
+\pause
+
+\ex.
+\a. \tit{in} --- \tit{in}
+\b. \tit{van} --- \tit{van}
+\b. \tit{op} --- \tit{op}
+
+\end{frame}
+
+
+
+
+\appendix
+
+\begin{frame}{References}
+
+	\scriptsize{
+		\printbibliography
+	}
+
+\end{frame}
+
+
+
+\end{document}
