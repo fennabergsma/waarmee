@@ -4,6 +4,8 @@
 \usepackage{../fenna-files/commands}
 \bibliography{../fenna-files/references}{}
 
+\usepackage{multicol}
+
 \geometry{paperwidth=140mm,paperheight=105mm}
 %
 % Choose how your presentation looks.
@@ -13,13 +15,13 @@
 %
 \mode<presentation>
 {
-	\usetheme{Berlin}      % or try Darmstadt, Madrid, Warsaw, ...
-	\definecolor{goethe}{rgb}{0,0.37,0.66}
-	\usecolortheme[named=goethe]{structure}
+\usetheme{Berlin}      % or try Darmstadt, Madrid, Warsaw, ...
+\definecolor{goethe}{rgb}{0,0.37,0.66}
+\usecolortheme[named=goethe]{structure}
 	% \usefonttheme{serif}  % or try serif, structurebold, ...
-	\setbeamertemplate{navigation symbols}{}
-	\setbeamertemplate{caption}[numbered]
-	\resetcounteronoverlays{exx}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{caption}[numbered]
+\resetcounteronoverlays{exx}
 }
 
 \renewcommand{\eachwordone}{\sffamily}
@@ -34,16 +36,16 @@
 
 
 \addtobeamertemplate{navigation symbols}{}{%
-	\usebeamerfont{footline}%
-	\usebeamercolor[fg]{footline}%
-	\hspace{1em}%
-	\insertframenumber/\inserttotalframenumber
+\usebeamerfont{footline}%
+\usebeamercolor[fg]{footline}%
+\hspace{1em}%
+\insertframenumber/\inserttotalframenumber
 }
 
 
 \title{The \tsc{r}-pronoun and postposition \tit{waar-mee} in Dutch}
 \author{Fenna Bergsma}
-\date{Nanolab\\ \today}
+\date{Syntax colloquium\\ \today}
 \institute{Goethe-Universität Frankfurt}
 
 
@@ -51,29 +53,81 @@
 \begin{document}
 
 \begin{frame}
-	\titlepage
+\titlepage
 
 \centering{
-	\includegraphics[width=0.4\textwidth]{dfg-logo}
-	\hspace{2cm}
-	\includegraphics[width=0.3\textwidth]{goethe-logo}}
+\includegraphics[width=0.4\textwidth]{dfg-logo}
+\hspace{2cm}
+\includegraphics[width=0.3\textwidth]{goethe-logo}}
 \end{frame}
 
 % \section{Introduction}
 
 \begin{frame}
 
-\exg. Ik schilder \tbf{met} een kwast.\\
- I paint with a brush\\
- `I am painting with a brush.'\label{ex:metdp}
-
- \pause
-
-\exg. Ik zie \tbf{t}.\\
- I see it\\
- `I see it.'\label{ex:tverb}
+\exg. Jij schildert \tbf{met} \tbf{een} \tbf{kwast}.\\
+ you paint with a brush\\
+ `You are painting with a brush.'\label{ex:metwat}
 
 \pause
+
+\exg. \tbf{Wat} zie jij?\\
+ what see you\\
+ `What do you see?'\label{ex:wat}
+
+\pause
+
+\exg. *\tbf{Met} \tbf{wat} schilder jij?\\
+ with what paint you\\
+ `What are you painting with?'\label{ex:metwat}
+
+\pause
+
+\exg. \tbf{Waarmee} schilder jij?\\
+ {where with} paint you with\\
+ `What are you painting with?'\label{ex:waar-mee}
+
+\end{frame}
+
+
+\begin{frame}
+
+\exg. Womit malst du?\\
+ {where with} paint you\\
+ `What are you painting with?'
+
+\pause
+
+\exg. Waa\tbf{r}mee schilder jij?\\
+ {where with} paint you with\\
+ `What are you painting with?'\label{ex:waar-mee}
+
+\end{frame}
+
+
+
+
+\begin{frame}
+
+\exg. Worauf kletterst du?\\
+ {where on} climb you\\
+ `What are you climbing onto?'
+
+\exg. Wo bist du \tbf{(d)r}auf geklettert?\\
+ where are you on climbed\\
+ `What did you climb on?'
+
+\pause
+
+\exg. Waa\tbf{r} ben jij op geklommen?\\
+ where are you on climbed\\
+ `What did you climb on?'
+
+
+\end{frame}
+
+
+\begin{frame}
 
 \exg. *Ik schilder \tbf{met} \tbf{t}.\\
  I paint with it\\
@@ -90,7 +144,10 @@
 
 \begin{frame}
 
-\centering{\Large{Why *\tit{met t}?}}
+\centering{\Large{Why *\tit{met wat}?}}
+
+\vspace{3em} \citep{riemsdijk1978}
+
 
 \end{frame}
 
@@ -98,75 +155,38 @@
 \begin{frame}
 
 \centering{
-*\tit{met t} \hspace{1em} | \hspace{1em} \tit{r mee}}
+*\tit{met wat} \hspace{1em} | \hspace{1em} \tit{waar-mee}}
 
 \vspace{1em}
 
 \pause
 
 \begin{itemize}
-	\item positions are reversed \pause
-	\item \tit{met} becomes \tit{mee} \pause
-	\item \tit{t} becomes \tit{r}, which is syncretic with locative
+\item positions are reversed \pause
+\item \tit{met} becomes \tit{mee} \pause
+\item \tit{wat} becomes \tit{waar}, which is syncretic with locative \citep{koopman1994}
 \end{itemize}
 
-\vspace{1em}
+\vspace{1em}\pause
 
-R PRONOUNS ARE REGULAR SPELLOUT
-
-THERE IS ONLY 1 CONDITION: PROPER CONSTITUENT!
-
-\end{frame}
-
-% \section{R-pronouns and constituency}
-
-% \subsection{Distribution of \tsc{r}-pronouns}
-
-
-\begin{frame}
-
-\ex. rmee ⇒ waarmee
-
-\ex. met t ⇒ met wat
+\tsc{r}-pronouns are the result of regular spellout mechanisms
 
 \pause
-\vspace{1em}
 
-\exg. \tbf{Wat} zie jij?\\
- what see you\\
- `What do you see?'\label{ex:wat}
-
-\exg. *\tbf{Met} \tbf{wat} schilder jij?\\
- with what paint you\\
- `What are you painting with?'\label{ex:metwat}
-
-\exg. \tbf{Waar} \tbf{-mee} schilder jij?\\
- \tsc{r} with paint you with\\
- `What are you painting with?'\label{ex:waar-mee}
+as long as all features form a proper constituent
 
 \end{frame}
-
 
 
 \begin{frame}
 
 \ex.\label{ex:headed}
-\ag. Ik schilder met de kwast \tbf{waar} \tbf{-mee} jij ook schildert.\\
- I paint with the brush \tsc{r} with you also paint\\
- `I am painting with the brush that you are painting with too.'
-\bg. *Ik schilder met de kwast \tbf{met} \tbf{wat} jij ook schildert.\\
- I paint with the brush with what you also paint\\
- `I am painting with the brush that you are painting with too.'
-
- \pause
-
-\ex.\label{ex:headless}
-\ag. Ik schilder \tbf{waar} \tbf{-mee} jij ook schildert.\\
- I paint \tsc{r} with you also paint\\
- `I am painting with what you are painting with too.'
-\bg. *Ik schilder \tbf{met} \tbf{wat} jij ook schildert.\\
- I paint with what you also paint\\
- `I am painting with what you are painting with too.'
+\ag. Ik koop de kwast \tbf{waar} \tbf{-mee} jij schildert.\\
+ I buy the brush where with you paint\\
+ `I buy the brush that you are painting with.'
+\bg. *Ik koop de kwast \tbf{met} \tbf{wat} jij schildert.\\
+ I koop the brush with what you paint\\
+ `I buy the brush that you are painting with.'
 
 \end{frame}
 
@@ -174,8 +194,27 @@ THERE IS ONLY 1 CONDITION: PROPER CONSTITUENT!
 \begin{frame}
 
 \ex.
+\ag. \tbf{Waar} \tbf{-mee} schilder jij?\\
+ where with paint you with\\
+ `What are you painting with?'\label{ex:const2}
+\bg. Ik koop de kwast [\tbf{waar} \tbf{-mee} jij schildert].\\
+ I buy the brush where with you paint\\
+ `I koop the brush that you are painting with.'\label{ex:const3}
+
+\pause
+
+\ex. [[jij] [[schilder] [\tbf{waar-mee}]]]\label{ex:const2stage}
+
+
+\end{frame}
+
+
+
+\begin{frame}
+
+\ex.
 \ag. Ik heb gekocht \tbf{waar} \tbf{-mee} jij schildert.\\
- I have bought \tsc{r} with you paint\\
+ I have bought where with you paint\\
  `I bought what you are painting with.'\label{ex:gekochtwaar-mee}
 \bg. *Ik heb gekocht \tbf{met} \tbf{wat} jij schildert.\\
  I have bought with what you paint\\
@@ -185,38 +224,12 @@ THERE IS ONLY 1 CONDITION: PROPER CONSTITUENT!
 
 \ex.\label{ex:schildermet}
 \ag. *Ik schilder \tbf{waar} \tbf{-mee} jij hebt gekocht.\\
- I paint \tsc{r} with you have bought\\
+ I paint where with you have bought\\
  `I paint with what you bought.'\label{ex:schilderwaar-mee}
 \bg. Ik schilder \tbf{met} \tbf{wat} jij hebt gekocht.\\
  I paint with what you have bought\\
  `I paint with what you bought.'\label{ex:schildermetwat}
 
-
-\end{frame}
-
-
-\begin{frame}
-
-\ex.
-\ag. Ik schilder \tbf{r} \tbf{-mee}.\\
- I paint \tsc{r} with\\
- `I am painting with it.'\label{ex:const1}
-\bg. \tbf{Waar} \tbf{-mee} schilder jij?\\
- \tsc{r} with paint you with\\
- `What are you painting with?'\label{ex:const2}
-\bg. Ik schilder met de kwast [\tbf{waar} \tbf{-mee} jij ook schildert].\\
- I paint with the brush \tsc{r} with you also paint\\
- `I am painting with the brush that you are painting with too.'\label{ex:const3}
-\bg. Ik schilder [\tbf{waar} \tbf{-mee} jij ook schildert].\\
- I paint \tsc{r} with you also paint\\
- `I am painting with what you are painting with too.'\label{ex:const4}
-
-\pause
-
-\ex.
-\a. [[ik] [[schilder] [\tbf{r -mee}]]]\label{ex:const1stage}
-\b. [[jij] [[schilder] [\tbf{waar-mee}]]]\label{ex:const2stage}
-\b. [[jij] [[ook] [[schilder] [\tbf{waar-mee}]]]]\label{ex:const3stage}
 
 \end{frame}
 
@@ -234,7 +247,7 @@ THERE IS ONLY 1 CONDITION: PROPER CONSTITUENT!
  \pause
 
 \exg. Ik heb gekocht [\tbf{waar} \tbf{-mee} jij schildert].\\
- I have bought \tsc{r} with you paint\\
+ I have bought where with you paint\\
  `I bought what you are painting with.'\label{ex:mismatchwaar-mee}
 
  \pause
@@ -271,30 +284,42 @@ THERE IS ONLY 1 CONDITION: PROPER CONSTITUENT!
 
 \begin{frame}
 
-\ex. w -aa -r -mee
+\ex. w -aa \tbf{-r} \tbf{-mee}
 
-\ex. met w -a -t
+\ex. \tbf{met} w -a \tbf{-t}
+
+\pause
+
+\begin{itemize}
+\item late insertion (phonology after syntax)\pause
+\item individual features (no feature bundles)
+\end{itemize}
 
 
 \end{frame}
 
 \begin{frame}
 
-\begin{forest}
+\ex. \begin{forest}
 [\tsc{wP}
     [W, roof]
 ]
 {\draw (.east) node[right]{⇔ \tit{w}}; }
 \end{forest}\label{ex:entryw}
 
+\citep{hachem2015}
+
 \pause
 
-\begin{forest}
+
+\ex. \begin{forest}
 [\tsc{deixP}
     [\tsc{deix}, roof]
 ]
 {\draw (.east) node[right]{⇔ \tit{a}}; }
 \end{forest}\label{ex:entrya}
+
+\citep[cf.][]{lander2016}
 
 \end{frame}
 
@@ -302,7 +327,7 @@ THERE IS ONLY 1 CONDITION: PROPER CONSTITUENT!
 \begin{frame}
 
 \ex.\label{ex:tsubobj}
-\ag. t Staat in de hal.\\
+\ag. T staat in de hal.\\
  \tsc{3sg.n.nom} stands in the hallway\\
  `It is standing in the hallway.'\label{ex:tnoclitic}
 \bg. Ik zie t.\\
@@ -312,19 +337,32 @@ THERE IS ONLY 1 CONDITION: PROPER CONSTITUENT!
  I have \tsc{3sg.n.dat} a hit given\\
  `I gave it a hit.'
 
-\ex.\label{ex:hemsubobj}
-\ag. Hij staat in de hal.\\
-\tsc{3sg.m.nom} stands in the hallway\\
-`He is standing in the hallway.'
-\bg. Ik zie hem.\\
-I see \tsc{3sg.m.acc}\\
-`I see it.'
-\bg. Ik heb hem een klap gegeven.\\
-I have \tsc{3sg.m.dat} a hit given\\
-`I gave him a hit.'
-
 \end{frame}
 
+\begin{frame}
+
+\label{ex:casetree}
+\ex. \begin{forest} boom
+	[\tsc{insP}
+			[\tsc{f4}]
+			[\tsc{datP}
+					[\tsc{f3}]
+					[\tsc{accP}
+							[\tsc{f2}]
+							[\tsc{nomP}
+									[\tsc{f1}]
+									[X
+											[..,roof]
+									]
+							]
+					]
+			]
+	]
+\end{forest}
+
+\citep{caha2009}
+
+\end{frame}
 
 
 
@@ -338,12 +376,42 @@ I have \tsc{3sg.m.dat} a hit given\\
  he and this/that stand in the corner\\
  `He and it are standing in the corner.'\label{ex:datcoordinated}
 
+\pause
+
+\exg. T staat in de hal.\\
+ \tsc{3sg.n.nom} stands in the hallway\\
+ `It is standing in the hallway.'\label{ex:tnoclitic}
+
+\end{frame}
+
+
+
+\begin{frame}
+
+\label{ex:strengthtree}
+\ex. \begin{forest} boom
+			[CP
+					[C]
+					[ΣP
+							[Σ]
+							[IP
+									[I]
+									[X
+											[..,roof]
+									]
+							]
+					]
+			]
+\end{forest}
+
+\citep{cardinaletti1996}
+
 \end{frame}
 
 
 \begin{frame}
 
-\begin{forest} boom
+\ex. \begin{forest} boom
  [\tsc{datP}
      [\tsc{f3}]
      [\tsc{accP}
@@ -352,8 +420,11 @@ I have \tsc{3sg.m.dat} a hit given\\
              [\tsc{f1}]
              [ΣP
                  [Σ]
-                 [\tsc{thingP}
-                     [\tsc{thing}, roof]
+								 [IP
+								 		[I]
+		                 [\tsc{thingP}
+		                     [\tsc{thing}, roof]
+										]
                  ]
              ]
          ]
@@ -362,16 +433,68 @@ I have \tsc{3sg.m.dat} a hit given\\
  {\draw (.east) node[right]{⇔ \tit{t}}; }
  \end{forest}\label{ex:entryt}
 
+
+\citep{cardinaletti1996,kayne2005,caha2009}
+
 \end{frame}
 
 
 \begin{frame}
 
+\ex. \tbf{The Superset Principle} \citep{starke2009}: \\
+	A lexically stored tree matches a syntactic node iff the lexically stored tree contains the syntactic node.
+
+\begin{multicols}{2}
+
+\ex. \begin{forest} boom
+	[\tsc{accP}
+			[\tsc{f2}]
+			[\tsc{nomP}
+					[\tsc{f1}]
+					[ΣP
+							[Σ]
+							[IP
+									[I]
+									[\tsc{thingP}
+											[\tsc{thing}, roof]
+									]
+							]
+					]
+			]
+	]
+\end{forest}\label{ex:tacc}
+
+\ex. \begin{forest} boom
+	[\tsc{nomP}
+			[\tsc{f1}]
+			[ΣP
+					[Σ]
+					[IP
+							[I]
+							[\tsc{thingP}
+									[\tsc{thing}, roof]
+							]
+					]
+			]
+	]
+\end{forest}\label{ex:tnom}
+
+\end{multicols}
+
+\end{frame}
+
+
+
+
+\begin{frame}
+
 \exg. Ik ben r al geweest.\\
- I am \tsc{r} already been\\
+ I am there already been\\
  `I have already been there.'
 
-\begin{forest} boom
+\pause
+
+\ex. \begin{forest} boom
 [\tsc{loc}P
    [\tsc{location}]
    [\tsc{thingP}
@@ -381,29 +504,46 @@ I have \tsc{3sg.m.dat} a hit given\\
 {\draw (.east) node[right]{⇔ \tit{r}}; }
 \end{forest}\label{ex:entryr}
 
+\citep{baunaz2018}
+
+\pause
+
+\ex. \tbf{The Elsewhere Condition} (\citealt{kiparsky1973}, formulated as in \citealt{caha2020}):\\
+When two entries can spell out a given node, the more specific entry wins. Under the Superset Principle governed insertion, the more specific entry is the one which has fewer unused features.
+
+\pause
+
+\ex. \begin{forest} boom
+ [\tsc{thingP}
+     [\tsc{thing}, roof]
+ ]
+{\draw (.east) node[right]{⇒ \tit{r}}; }
+\end{forest}
+
 \end{frame}
 
 
 \begin{frame}
 
-	\begin{tabular}{cc}
-	\toprule
+\centering{
+\begin{tabular}{cc}
+\toprule
 						& \tsc{n.sg} \\
-	\midrule
-	\tsc{nom} & t         \\
-	\tsc{acc} & t         \\
-	\tsc{dat} & t         \\
-	\tsc{ins} & r -mee    \\
-	\bottomrule
+\midrule
+\tsc{nom} & t         \\
+\tsc{acc} & t         \\
+\tsc{dat} & t         \\
+\tsc{ins} & r -mee    \\
+\bottomrule
 \end{tabular}
-
+}
 
 \end{frame}
 
 
 \begin{frame}
 
-\begin{forest} boom
+\ex. \begin{forest} boom
 [\tsc{insP}
     [\tsc{f4}]
     [\tsc{datP}
@@ -414,6 +554,9 @@ I have \tsc{3sg.m.dat} a hit given\\
                 [\tsc{f1}]
                 [ΣP
                     [Σ]
+										[IP
+												[I]
+										]
                 ]
             ]
         ]
@@ -422,12 +565,10 @@ I have \tsc{3sg.m.dat} a hit given\\
 {\draw (.east) node[right]{⇔ \tit{-mee}}; }
 \end{forest}\label{ex:entrymee}
 
-\end{frame}
+\pause
 
 
-\begin{frame}
-
-\begin{forest} boom
+\ex. \begin{forest} boom
 [\tsc{insP}
     [\tsc{f4},roof]
 ]
@@ -439,9 +580,39 @@ I have \tsc{3sg.m.dat} a hit given\\
 
 \begin{frame}
 
-	show fseq
+[W [\tsc{deix} [\tsc{f4} [\tsc{f3} [\tsc{f2} [\tsc{f1} [Σ [I [\tsc{thing}] ] ] ] ] ] ] ] ]
 
-\begin{forest} boom
+\end{frame}
+
+
+\begin{frame}
+
+\ex. Merge F and \label{ex:spellout}
+	 \a. Spell out FP.
+	 \b. If (a) fails, attempt movement of the spec of the complement of \tsc{f}, and retry (a).
+	 \b. If (b) fails, move the complement of \tsc{f}, and retry (a).
+
+\pause
+
+\ex. \tbf{Cyclic Override} \citep{starke2018}:\\
+	Lexicalisation at a node XP overrides any previous match at a phrase contained in XP.
+
+\pause
+
+\ex. \tbf{Backtracking} \citep{starke2018}:\\
+	When spellout fails, go back to the previous cycle, and try the next option for that cycle.\label{ex:backtracking}
+
+\pause
+
+\ex. \tbf{Spec Formation} \citep{starke2018}:\\
+	If Merge F has failed to spell out (even after backtracking), try to spawn a new derivation providing the feature F and merge that with the current derivation, projecting the feature F at the top node.\label{ex:specformation}
+
+\end{frame}
+
+
+\begin{frame}
+
+\ex. \begin{forest} boom
  [\tsc{thingP}
      [\tsc{thing}, roof]
  ]
@@ -450,9 +621,9 @@ I have \tsc{3sg.m.dat} a hit given\\
 
 \pause
 
-\begin{forest} boom
-[ΣP
-   [Σ]
+\ex. \begin{forest} boom
+[IP
+   [I]
    [\tsc{thingP}
        [\tsc{thing}, roof]
    ]
@@ -462,27 +633,49 @@ I have \tsc{3sg.m.dat} a hit given\\
 
 \end{frame}
 
+
 \begin{frame}
 
-	\begin{forest} boom
-	[\tsc{nomP}
-	   [\tsc{f1}]
+\ex. \begin{forest} boom
 	   [ΣP
 	       [Σ]
-	       [\tsc{thingP}
-	           [\tsc{thing}, roof]
-	       ]
+				 [IP
+				 		[I]
+			       [\tsc{thingP}
+			           [\tsc{thing}, roof]
+			       ]
+					]
 	   ]
-	]
 	{\draw (.east) node[right]{⇒ \tit{t}}; }
-	\end{forest}
+\end{forest}
 
 \end{frame}
 
 
 \begin{frame}
 
-\begin{forest} boom
+\ex. \begin{forest} boom
+	[\tsc{nomP}
+	   [\tsc{f1}]
+	   [ΣP
+	       [Σ]
+				 [IP
+				 		[I]
+			       [\tsc{thingP}
+			           [\tsc{thing}, roof]
+			       ]
+					]
+	   ]
+	]
+	{\draw (.east) node[right]{⇒ \tit{t}}; }
+\end{forest}
+
+\end{frame}
+
+
+\begin{frame}
+
+\ex. \begin{forest} boom
 [\tsc{datP}
     [\tsc{f3}]
     [\tsc{accP}
@@ -491,9 +684,12 @@ I have \tsc{3sg.m.dat} a hit given\\
            [\tsc{f1}]
            [ΣP
                [Σ]
-               [\tsc{thingP}
-                   [\tsc{thing}, roof]
-               ]
+							 [IP
+							 		[I]
+		               [\tsc{thingP}
+		                   [\tsc{thing}, roof]
+		               ]
+							 ]
            ]
        ]
     ]
@@ -508,7 +704,7 @@ I have \tsc{3sg.m.dat} a hit given\\
 
 \begin{frame}
 
-\begin{forest} boom
+\ex. \begin{forest} boom
 [\tsc{insP}
     [\tsc{f4}]
     [\tsc{datP}
@@ -519,9 +715,12 @@ I have \tsc{3sg.m.dat} a hit given\\
                [\tsc{f1}]
                [ΣP
                    [Σ]
-                   [\tsc{thingP}
-                       [\tsc{thing}, roof]
-                   ]
+									 [IP
+									 		[I]
+		                   [\tsc{thingP}
+		                       [\tsc{thing}, roof]
+		                   ]
+										]
                ]
            ]
         ]
@@ -535,17 +734,32 @@ I have \tsc{3sg.m.dat} a hit given\\
 
 \begin{frame}
 
-\begin{forest} boom
-[ΣP
-	 [\tsc{thingP}
-			 [\tsc{thing}, roof]
-	 ]
-	 {\draw (.east) node[right]{⇒ \tit{r}}; }
-	 [ΣP
-			 [Σ]
-	 ]
-	 {\draw (.east) node[right]{⇒ \tit{-mee}}; }
-]
+\ex. \begin{forest} boom
+	[\tsc{datP}
+	    [\tsc{datP}
+	        [\tsc{f3}]
+	        [\tsc{accP}
+	           [\tsc{f2}]
+	           [\tsc{nomP}
+	               [\tsc{f1}]
+	               [ΣP
+	                   [Σ]
+										 [IP
+										 		[I]
+			                   [\tsc{thingP}
+			                       [\tsc{thing}, roof]
+												 ]
+	                   ]
+	               ]
+	           ]
+	        ]
+	    ]
+	    {\draw (.east) node[right]{⇒ \tit{'t}}; }
+	    [\tsc{insP}
+	        [\tsc{f4}]
+	    ]
+	    {\draw (.east) node[right]{⇒ }; }
+	]
 \end{forest}
 
 \end{frame}
@@ -553,15 +767,37 @@ I have \tsc{3sg.m.dat} a hit given\\
 
 \begin{frame}
 
-\begin{forest} boom
-[\tsc{nomP}
-    [\tsc{f1}]
-    [ΣP
+\ex. \begin{forest} boom
+[IP
+	 [\tsc{thingP}
+			 [\tsc{thing}, roof]
+	 ]
+	 {\draw (.east) node[right]{⇒ \tit{r}}; }
+	 [IP
+			 [I]
+	 ]
+	 {\draw (.east) node[right]{⇒ \tit{-mee}}; }
+]
+\end{forest}
+
+\pause
+
+\citep{abels2003diss}
+
+\end{frame}
+
+
+\begin{frame}
+
+\ex. \begin{forest} boom
+[ΣP
+    [Σ]
+    [IP
        [\tsc{thingP}
            [\tsc{thing}, roof]
        ]
-       [ΣP
-           [Σ]
+       [IP
+           [I]
        ]
     ]
 ]
@@ -573,16 +809,16 @@ I have \tsc{3sg.m.dat} a hit given\\
 
 \begin{frame}
 
-\begin{forest} boom
-[\tsc{nomP}
+\ex. \begin{forest} boom
+[ΣP
    [\tsc{thingP}
        [\tsc{thing}, roof]
    ]
    {\draw (.east) node[right]{⇒ \tit{r}}; }
-   [\tsc{nomP}
-       [\tsc{f1}]
-       [ΣP
-           [Σ]
+   [ΣP
+       [Σ]
+       [IP
+           [I]
        ]
    ]
    {\draw (.east) node[right]{⇒ \tit{-mee}}; }
@@ -594,7 +830,7 @@ I have \tsc{3sg.m.dat} a hit given\\
 
 \begin{frame}
 
-\begin{forest} boom
+\ex. \begin{forest} boom
 [\tsc{insP}
     [\tsc{thingP}
        [\tsc{thing}, roof]
@@ -608,8 +844,11 @@ I have \tsc{3sg.m.dat} a hit given\\
                [\tsc{f2}]
                [\tsc{nomP}
                    [\tsc{f1}]
-                   [ΣP
-                       [Σ]
+									 [ΣP
+									 		[Σ]
+		                   [IP
+		                       [I]
+											]
                    ]
                ]
            ]
@@ -624,7 +863,7 @@ I have \tsc{3sg.m.dat} a hit given\\
 
 \begin{frame}
 
-\begin{forest} boom
+\ex. \begin{forest} boom
 [\tsc{\tsc{wP}}
 		[\tsc{\tsc{wP}}
 				[\tsc{w}, roof]
@@ -649,7 +888,10 @@ I have \tsc{3sg.m.dat} a hit given\\
 											 [\tsc{nomP}
 													 [\tsc{f1}]
 													 [ΣP
-															 [Σ]
+													 		 [Σ]
+															 [IP
+																	 [I]
+															 ]
 													 ]
 											 ]
 									 ]
@@ -664,104 +906,234 @@ I have \tsc{3sg.m.dat} a hit given\\
 \end{frame}
 
 
+
 \begin{frame}
 
-	\begin{itemize}
-		\item rmee is nothing special anymore, just a result of spellout
-		\item r is ambiguous between thing and location, r is a caseless base
-		\item met and mee are separate lexical entries, so the system allows for them to phonologically differ
-		\item mee is a postposition, met is a preposition
-	\end{itemize}
+\ex. \begin{forest} boom
+[CP
+    [\tsc{\tsc{wP}}
+        [\tsc{\tsc{wP}}
+            [\tsc{w}, roof]
+        ]
+        {\draw (.east) node[right]{⇒ \tit{w}}; }
+        [\tsc{deixP}
+            [\tsc{deixP}
+                [\tsc{deix}, roof]
+            ]
+            {\draw (.east) node[right]{⇒ \tit{a}}; }
+            [\tsc{datP}
+                [\tsc{f3}]
+                [\tsc{accP}
+                   [\tsc{f2}]
+                   [\tsc{nomP}
+                       [\tsc{f1}]
+                       [ΣP
+                           [Σ]
+													 [IP
+													 		[I]
+		                           [\tsc{thingP}
+		                               [\tsc{thing}, roof]
+		                           ]
+														]
+                       ]
+                   ]
+                ]
+            ]
+            {\draw (.east) node[right]{⇒ \tit{t}}; }
+        ]
+    ]
+    [CP
+        [..,roof]
+    ]
+]
+\end{forest}
 
 \end{frame}
 
 
 \begin{frame}
 
-	what happens to \tit{met wat}?
-
-	--give a tree of halfway there--
+\begin{itemize}
+	\item \tsc{r}-pronouns are nothing special, but just a result of regular spellout \pause
+	\item \tit{r} is ambiguous between location and (caseless) thing \pause
+	\item \tit{met} and \tit{mee} are separate lexical entries
+		\begin{itemize}
+			\item so their phonological realization can differ
+			\item so they can differ between between being pre and post
+		\end{itemize}
+\end{itemize}
 
 \end{frame}
 
 
 \begin{frame}
-
-\exg. Ik zie \tbf{haar/hem}.\\
- I see her/him\\
- `I see her/him.'\label{ex:aniobj}
 
 \exg. Ik zie \tbf{t}.\\
  I see it\\
  `I see it.'\label{ex:inaniobj}
-
-\exg. Ik schilder samen \tbf{met} \tbf{haar/hem}.\\
- I paint together with her/him\\
- `I am painting together with her/him.'\label{ex:prepani}
 
 \exg. *Ik schilder \tbf{met} \tbf{t}.\\
  I paint with it\\
  `I am painting with it.'\label{ex:prephet}
 
 \exg. Ik schilder \tbf{r} \tbf{-mee}.\\
- I paint \tsc{r} -with\\
+ I paint where -with\\
  `I am painting with it.'\label{ex:preper}
-
-gender and number between sigma and case -- make tree
-
-
-\end{frame}
-
-
-\begin{frame}
-
-list of postpositions and prepositions
-maybe i have a tree
-
-\ex.
-\ag. Ik zit \tbf{r} \tbf{op}.\\
- I sit \tsc{r} on\\
- `I am sitting on it.
-\bg. *Ik zit \tbf{op} \tbf{t}.\\
- I sit on it\\
- `I am sitting on it.
-
-\ex.
- \ag. Hij zwemt \tbf{r} \tbf{in}.\\
-  he swims it-in\\
-  `He is swimming in it.'
- \bg. *Hij zwemt \tbf{in} \tbf{t}.\\
-  he swims in it\\
-  `He is swimming in it.'
 
 \pause
 
-verbal particles
+\exg. Ik zie \tbf{haar/hem}.\\
+ I see her/him\\
+ `I see her/him.'\label{ex:aniobj}
 
-\ex. CVt
-\a. \tit{met} --- \tit{mee}
-\b. \tit{tot} --- \tit{toe}
+\exg. Ik schilder samen \tbf{met} \tbf{haar/hem}.\\
+I paint together with her/him\\
+`I am painting together with her/him.'\label{ex:prepani}
+
+\pause
+
+\ex. [\tsc{f4} [\tsc{f3} [\tsc{f2} [\tsc{f1} [\tbf{phi} [Σ [I [\tsc{thing}] ] ] ] ] ] ] ]
+
+\end{frame}
+
+
+
+\begin{frame}
+
+\exg. Ik heb gekocht waar mee jij schildert.\\
+ I have bought where with you paint\\
+ `I bought what you are painting with.'\label{ex:meestranded}
+
+\pause
+
+\exg. Ik heb gekocht waar jij mee schildert.\\
+ I have bought where you paint\\
+ `I bought what you are painting with.'\label{ex:meestranded}
+
+\pause
+
+\ex. \begin{forest} boom
+[\tsc{insP}
+    [\tsc{thingP}
+       [\tsc{thing}, roof]
+    ]
+    {\draw (.east) node[right]{⇒ \tit{r}}; }
+    [\tsc{\tbf{insP}}
+       [\tsc{f4}]
+       [\tsc{datP}
+           [\tsc{f3}]
+           [\tsc{accP}
+               [\tsc{f2}]
+               [\tsc{nomP}
+                   [\tsc{f1}]
+									 [ΣP
+									 		[Σ]
+			                   [IP
+			                       [I]
+			                   ]
+			               ]
+								]
+           ]
+       ]
+    ]
+    {\draw (.east) node[right]{⇒ \tit{-mee}}; }
+]
+\end{forest}
+
+\citep{noonan2017dutch}
 
 \end{frame}
 
 
 \begin{frame}
 
-	repeat example i always use
-
-\exg. Ik heb gekocht waar jij mee schildert.\\
- I have bought waar you with paint\\
- `I bought what you are painting with.'\label{ex:meestranded}
-
-	look at story again
-
-\exg. *Ik heb gekocht waar jij schildert mee.\\
- I have bought waar you paint with\\
- `I bought what you are painting with.'\label{ex:meeend}
+\begin{tabular}{ l | l | l }
+\textsc{prep} \textit{what} & \textit{where} \tsc{post} & translation \\
+\hline
+ aan wat & waar\textbf{aan} & `on whom/what' \\
+ achter wat & waar\textbf{achter} & `behind whom/what' \\
+ bij wat & waar\textbf{bij} & `at whom/what' \\
+ door wat & waar\textbf{door} & `by whom/what' \\
+ langs wat & waar\textbf{langs} & `alongside whom/what \\
+ met wat & waar\underline{\textbf{mee}} & `with whom/what' \\
+ naar wat & waar\textbf{naar} & `to whom/what' \\
+ op wat & waar\textbf{op} & `on whom/what' \\
+ over wat & waar\textbf{over} & `about whom/what' \\
+ tot wat & waar\underline{\textbf{toe}} & `to whom/what' \\
+ uit wat & waar\textbf{uit} & `out of whom/what' \\
+ van wat & waar\textbf{van} & `of whom/what' \\
+ voor wat & waar\textbf{voor} & `for whom/what' \\
+\end{tabular}
 
 \end{frame}
 
 
+\begin{frame}
+
+\ex.\label{ex:dutchin}
+\ag. Ik dans in het bos.\\
+ I dance in the forest\\
+ `I am dancing in the forest.'
+\bg. Ik dans het bos in.\\
+ I dance the forest in\\
+ `I am dancing into the forest.'
+
+\pause
+
+\exg. Ik dans r -in.\\
+ I dance \tsc{r} in\\
+ `I dance it in.'\\
+  *`I dance into it.'
+
+\pause
+
+\exg. *Ik ben r -in gedanst.\\
+ I am \tsc{r} in danced\\
+ `I dancing into it.'
+
+\pause
+
+\exg. Ik heb r -in gedanst.\\
+ I have \tsc{r} in danced\\
+ `I dancing in it.'
+
+
+\end{frame}
+
+\begin{frame}
+
+\centering{
+	\begin{tabular}{ccc}
+	\toprule
+					& DP				& \tsc{r}	\\
+	\midrule
+		pre		& \tsc{loc} & *     	\\
+		post	& \tsc{dir}	& \tsc{loc} \\
+	\bottomrule
+\end{tabular}
+		}
+
+\vspace{1em}
+\pause
+
+verbal particles in e.g. \tbf{mee}lopen `walk along', \tbf{mee}zingen `sing along'
+
+\vspace{1em}
+	\pause
+
+\centering{
+	\begin{tabular}{ccc}
+	\toprule
+					& \tit{mee}	& \tit{met}	\\
+	\midrule
+		pre		& verb		 	& noun     	\\
+		post	& noun			& *					 \\
+	\bottomrule
+	\end{tabular}
+	}
+
+
+\end{frame}
 
 
 \end{document}
