@@ -1,0 +1,221 @@
+\documentclass[12pt]{article}
+
+\usepackage[margin=1in]{geometry}
+%\usepackage{setspace}
+%\doublespacing
+
+\usepackage{fenna-files/packages}
+\usepackage{fenna-files/commands}
+\bibliography{fenna-files/references}{}
+
+\title{The instrumental \tsc{r}-pronoun and postposition in Dutch}
+\author{Fenna Bergsma\\Goethe-Universität Frankfurt}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section{The problem}
+
+Dutch has several types of inanimate pronouns.
+
+\ex.
+\ag. t\\
+ it\\
+ `it'
+\bg. *dat\\
+ that\\
+ `that'
+\bg. *wat\\
+ what\\
+ `what'
+\bg. *iets\\
+ something\\
+ `something'
+\bg. *alles\\
+ everything\\
+ `everything'
+
+Dutch has a preposition for that expresses instrumental.
+
+\exg. met een potlood\\
+ with a pencil\\
+ `with a pencil'
+
+Inanimate pronouns in Dutch do not combine with the instrumental preposition.
+
+\ex.
+\ag. *met t\\
+ with it\\
+ `with it'
+\bg. *met dat\\
+ with that\\
+ `with that'
+\bg. *met wat\\
+ with what\\
+ `with what'
+\bg. *met iets\\
+ with something\\
+ `with something'
+\bg. *met alles\\
+ with everything\\
+ `with everything'
+
+Instead, an \tsc{r}-pronoun plus postposition is used.
+
+\ex.
+\ag. (e)r mee\\
+ there with\\
+ `with it'
+\bg. daar mee\\
+ there with\\
+ `with that'
+\bg. waar mee\\
+ where with\\
+ `with what'
+\bg. ergens mee\\
+ somehwere with\\
+ `with something'
+\bg. overal mee\\
+ everywhere with\\
+ `with everything'
+
+
+\section{This paper: questions and answers}
+
+There is a big question to be asked:
+
+\begin{itemize}
+  \item Why *[P inanimate]?
+\end{itemize}
+
+And there are three questions with respect to the instrumental:
+
+\begin{itemize}
+  \item why is there an \tit{r}, even though there is no location involved
+  \item why does the adposition change form?
+  \item why does the adposition change position?
+\end{itemize}
+
+
+Answer to the big question:
+
+\begin{itemize}
+  \item the \tsc{r}-pronoun and postposition are the default spellout, as long as they form a proper constituent
+\end{itemize}
+
+Answers to the smaller questions:
+
+\begin{itemize}
+  \item the \tit{r} is ambiguous between location and (caseless) thing
+  \item the preposition and postposition are two separate items in the lexcion so: (1) the form can be different, and (2) the position can be different
+\end{itemize}
+
+
+\section{Proof for proper constituent}
+
+Let's compare a proper constituent vs. not a proper constituent
+
+\ex.
+\ag. Ze heeft (de brief) daar mee geschreven.\\
+ she has the letter there with written\\
+ `She wrote (the letter) with that.'
+\bg. Ze heeft (de brief) met dat potlood geschreven\\
+ she has the letter with that pencil written\\
+ `She wrote (the letter) with that pencil.'
+
+\tit{Daar mee} `there with' forms a proper constituent, \tit{met dat} `with that' does not.
+
+\ex. topicalization
+\a. Daar mee heeft ze (de brief) geschreven.
+\b. *Met dat heeft ze (de brief) potlood geschreven.
+\b. Met dat potlood heeft ze (de brief) geschreven.
+
+\ex. coordination
+\a. Ze heeft (de brief) hier mee en daar mee geschreven.
+\b. *Ze heeft (de brief) met die en met dat potlood.
+\b. Ze heeft (de brief) met die pen en met dat potlood geschreven.
+
+\ex. fragment answer
+\a. Waarmee heeft ze de brief geschreven?
+\b. daarmee
+\b. *met dat
+\b. met dat potlood
+
+
+\section{Technical implementation}
+
+\ex. r = [loc [thing]]
+
+\ex. met = binary entry
+
+\ex. mee = unary entry
+
+
+alternative fseq
+
+\ex. [\tsc{f4} [\tsc{f3} [\tsc{f2} [\tsc{f1} [\tsc{thing} [ D [\tsc{deix}  ] ] ] ] ] ] ]
+
+
+\subsection{Mobility of \tit{mee}}
+
+\tit{daar} can move while stranding \tit{mee}. A consequence of letting \tit{mee} be a suffix makes it hard to only move \tit{daar}. Can \tit{d-} and \tit{a-} be lower in the hierarchy than \tit{r}? Then \tit{r} can be a suffix on \tit{da}. That way, \tit{d} and \tit{a} are not projecting as specifiers.
+
+\subsection{Full DPs and animates}
+
+Why do full DPs not take \tit{mee} as a suffix? Has to do with pronominal strength features and gaps. (?)
+
+
+\section{Big-big question}
+
+Should adpositions by default be able to be pre and post?
+
+\subsection{pro}
+
+lots are syncretic
+
+\subsection{against}
+
+several can only be pre or post
+
+\ex. only pre: zonder, volgens
+
+\ex. only post: vandaan
+
+\subsection{two tables}
+
+three instances of \tit{in}
+
+\begin{table}[h]
+  \begin{tabular}{ccc}
+  \toprule
+          & DP				& \tsc{r}	\\
+  \midrule
+    pre		& \tsc{loc} & *     	\\
+    post	& \tsc{dir}	& \tsc{loc} \\
+  \bottomrule
+  \end{tabular}
+\end{table}
+
+twice \tit{mee} and once \tit{met}
+
+\begin{table}[h]
+  \begin{tabular}{ccc}
+  \toprule
+          & \tit{mee}	& \tit{met}	\\
+  \midrule
+    pre		& verb		 	& noun     	\\
+    post	& noun			& *					 \\
+  \bottomrule
+  \end{tabular}
+\end{table}
+
+
+
+
+
+
+\printbibliography
+
+\end{document}
