@@ -1136,4 +1136,381 @@ verbal particles in e.g. \tbf{mee}lopen `walk along', \tbf{mee}zingen `sing alon
 \end{frame}
 
 
+
+
+\begin{frame}{The data}
+
+\exg. Zij schrijft de brief \tbf{met} een potlood.\\
+ she writes the letter with a pencil\\
+ `She writes the letter with a pencil.'
+
+\pause
+
+\exg. Zij koopt \tbf{dat}.\\
+ she buys that\\
+ `She buys that.'
+
+\pause
+
+\exg. * Zij schrijft de brief \tbf{met} \tbf{dat}.\\
+ she writes the letter with that\\
+ `She writes the letter with that.'
+
+\pause
+
+\exg. Zij schrijft de brief \tbf{daar} \tbf{mee}.\\
+ she writes the letter there with\\
+ `She writes the letter with that.'
+
+\end{frame}
+
+
+
+\begin{frame}{Questions and answers}
+
+\centering{
+\tbf{met dat} | \tbf{daar mee} \pause
+}
+
+\vspace{1em}
+
+\begin{enumerate}
+  \item Q: why *\tit{met dat} (but \tit{daar mee})? \pause\\
+  A: \tit{daar mee} is the default, \tit{met dat} only appears under special circumstances (morphological derivation, cf. \tit{mice} and not \tit{mouse-s})\pause
+  \item Q: why does the adposition change form? \pause\\
+  A: \tit{mee} and \tit{met} are stored as different forms in the lexicon \pause
+  \item Q: why does the adposition change position? \pause\\
+  A: \tit{mee} and \tit{met} are stored as preposition or postposition in the lexicon \pause
+  \item Q: why is there an \tit{r}, even though there is no location involved? \pause\\
+  A: \tit{r} is ambiguous between \tsc{thing} and \tsc{location}
+\end{enumerate}
+
+\end{frame}
+
+
+\begin{frame}{Nanosyntax}
+
+\begin{itemize}
+  \item functional sequence is constant\pause
+  \item spellout algorithm is constant\pause
+  \item a single place for cross-linguistic differences: the postsyntactic lexicon\pause
+\end{itemize}
+
+\vspace{1em}
+
+\begin{enumerate}
+  \item spellout happens feature by feature and targets phrases
+  \item phonological forms are stored in the postsyntactic lexicon
+  \item postpositions are candidates for spellout before prepositions are
+  \item ambiguity comes from containment relations
+\end{enumerate}
+
+\end{frame}
+
+
+
+\begin{frame}{differing phonological forms}
+
+\begin{itemize}
+  \item \tit{mee} and \tit{met} are stored as different forms in the lexicon
+  \item phonological forms are stored in the lexicon \pause
+\end{itemize}
+
+  \ex. \begin{forest} boom
+  [\tsc{insP}
+      [\tsc{f4}]
+      [\tsc{datP}
+          [\tsc{f3}]
+          [\tsc{accP}
+              [\tsc{f2}]
+              [\tsc{nomP}
+                  [\tsc{f1}]
+                  [ΣP
+                      [Σ]
+  										[IP
+  												[I]
+  										]
+                  ]
+              ]
+          ]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{-mee}}; }
+  \end{forest}\label{ex:entrymee}
+
+  \pause
+
+  \ex. \begin{forest} boom
+  [\tsc{insP}
+      [\tsc{f4},roof]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{met}}; }
+  \end{forest}\label{ex:entrymet}
+
+\end{frame}
+
+
+
+
+\begin{frame}{pre vs. post}
+
+\begin{itemize}
+  \item \tit{mee} and \tit{met} are stored as preposition or postposition in the lexicon \pause
+  \item postpositions are candidates for spellout before prepositions are \pause
+\end{itemize}
+
+  \ex. \begin{forest} boom
+  [\tsc{insP}
+      [\tsc{f4}]
+      [\tsc{datP}
+          [\tsc{f3}]
+          [\tsc{accP}
+              [\tsc{f2}]
+              [\tsc{nomP}
+                  [\tsc{f1}]
+                  [ΣP
+                      [Σ]
+  										[IP
+  												[I]
+  										]
+                  ]
+              ]
+          ]
+      ]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{-mee}}; }
+  \end{forest}\label{ex:entrymee}
+
+  \pause
+
+  \ex. \begin{forest} boom
+  [\tsc{insP}
+      [\tsc{f4},roof]
+  ]
+  {\draw (.east) node[right]{⇔ \tit{met}}; }
+  \end{forest}\label{ex:entrymet}
+
+\end{frame}
+
+
+
+\begin{frame}{pre vs. post}
+
+  \ex. Merge F and \label{ex:spellout}
+  	 \a. Spell out FP.
+  	 \b. If (a) fails, attempt movement of the spec of the complement of \tsc{f}, and retry (a).
+  	 \b. If (b) fails, move the complement of \tsc{f}, and retry (a).
+
+  \ex. \tbf{Backtracking} \citep{starke2018}:\\
+  	When spellout fails, go back to the previous cycle, and try the next option for that cycle.\label{ex:backtracking}
+
+  \ex. \tbf{Spec Formation} \citep{starke2018}:\\
+  	If Merge F has failed to spell out (even after backtracking), try to spawn a new derivation providing the feature F and merge that with the current derivation, projecting the feature F at the top node.\label{ex:specformation}
+
+\end{frame}
+
+
+\begin{frame}{\tit{r} without location}
+
+  \begin{itemize}
+    \item \tit{r} is ambiguous between \tsc{thing} and \tsc{location}
+    \item ambiguity comes from containment relations
+  \end{itemize}
+
+\pause
+
+\ex. \tbf{The Superset Principle} \citep{starke2009}: \\
+	A lexically stored tree matches a syntactic node iff the lexically stored tree contains the syntactic node.
+
+\ex. \begin{forest} boom
+[\tsc{loc}P
+   [\tsc{location}]
+   [\tsc{thingP}
+       [\tsc{thing}, roof]
+   ]
+]
+{\draw (.east) node[right]{⇔ \tit{r}}; }
+\end{forest}\label{ex:entryr}
+
+\end{frame}
+
+
+\begin{frame}{Derivational system}
+
+\begin{itemize}
+  \item \tit{daar mee} is the default, \tit{met dat} only appears under special circumstances (morphological derivation, cf. \tit{mice} and not \tit{mouse-s}) \pause
+  \item spellout happens feature by feature and targets constituents
+\end{itemize}
+
+
+
+\pause
+
+\ex.
+\ag. Ze heeft de brief \tbf{daar} \tbf{mee} geschreven.\\
+ she has the letter there with written\\
+ `She wrote the letter with that.'
+\bg. Zij heeft de brief \tbf{met} \tbf{dat} potlood geschreven.\\
+ she has the letter with that pencil written\\
+ `She wrote the letter with that potlood.'
+
+\end{frame}
+
+
+\begin{frame}{\tit{daar mee} in a proper constituent}
+
+\exg. Ze heeft de brief \tbf{daar} \tbf{mee} geschreven.\\
+ she has the letter there with written\\
+ `She wrote (the letter) with that.'
+
+\pause
+
+\exg. \tbf{Daar} \tbf{mee} heeft ze de brief geschreven.\\
+ there with has she the letter written\\
+ `With that she has written the letter.' \hfill topicalization
+
+\pause
+
+\exg. Ze heeft de brief \tbf{hier} \tbf{mee} en \tbf{daar} \tbf{mee} geschreven.\\
+ she has the letter here with and there with written\\
+ `She has written the letter with this and with that' \hfill coordination
+
+\pause
+
+\ex.
+\a. With what did she write the letter?
+\bg. \tbf{daar} \tbf{mee}\\
+ there with\\
+ `with that' \hfill fragment answer
+
+\end{frame}
+
+
+
+\begin{frame}
+
+  \ex. \begin{forest} boom
+  [\tsc{insP}
+      [\tsc{f4}]
+  	    [\tsc{datP}
+  	        [\tsc{f3}]
+  	        [\tsc{accP}
+  	           [\tsc{f2}]
+  	           [\tsc{nomP}
+  	               [\tsc{f1}]
+  	               [ΣP
+  	                   [Σ]
+  										 [IP
+  										 		[I]
+  			                   [\tsc{thingP}
+  			                       [\tsc{thing}, roof]
+  												 ]
+  	                   ]
+  	               ]
+  	           ]
+  	        ]
+  	    ]
+  	    {\draw (.east) node[right]{⇒ \tit{'t}}; }
+    ]
+  \end{forest}
+
+
+\end{frame}
+
+
+
+
+
+
+\begin{frame}{\tit{met dat} in a non-constituent}
+
+
+\exg. Ze heeft de brief \tbf{met} \tbf{dat} potlood geschreven.\\
+she has the letter with the pencil written\\
+`She has written the letter with that pencil.'
+
+\pause
+
+\ex.
+\ag. *\tbf{Met} \tbf{dat} heeft ze de brief \tbf{potlood} geschreven.\\
+ with that has she the letter pencil written\\
+ `With that pencil she has written the letter.'
+\bg. \tbf{Met} \tbf{dat} \tbf{potlood} heeft ze de brief geschreven.\\
+ with that pencil has she the letter written\\
+ `With that pencil she has written the letter.' \hfill topicalization
+
+\pause
+
+% \ex.
+% \ag. *Ze heeft de brief met die en met dat potlood geschreven.\\
+%  she has the letter with this and with that pencil written\\
+%  `She has written the letter with this pencil and with that marker.' \hfill coordination
+% \bg. Ze heeft de brief met die pen en en dat potlood geschreven.\\
+%  she has the letter with this marker and with that pencil written\\
+%  `She has written the letter with this pencil and with that marker.' \hfill coordination
+%
+% \pause
+
+\ex.
+\a. With what did she write the letter?
+\bg. *\tbf{met} \tbf{dat}\\
+ with that\\
+ `with that'
+\bg. \tbf{met} \tbf{dat} \tbf{potlood}\\
+ with that pancil\\
+ `with that pencil'\hfill fragment answer
+
+\end{frame}
+
+\begin{frame}
+
+  \ex. \begin{forest} boom
+[\tsc{insP}
+    [\tsc{f4}]
+    [\tsc{datP}
+        [\tsc{datP}
+            [\tsc{f3}]
+            [\tsc{accP}
+               [\tsc{f2}]
+               [\tsc{nomP}
+                   [\tsc{f1}]
+                   [ΣP
+                       [Σ]
+  										 [IP
+  										 		[I]
+                           [\tsc{thingP}
+                               [\tsc{thing}, roof]
+                           ]
+  											]
+                   ]
+               ]
+            ]
+        ]
+        {\draw (.east) node[right]{⇒ \tit{t}}; }
+        [NP
+            [\tsc{pencil}, roof]
+        ]
+        {\draw (.east) node[right]{⇒ \tit{potlood}}; }
+    ]
+]
+    \end{forest}
+
+\end{frame}
+
+\begin{frame}{Summary}
+
+    \begin{enumerate}
+      \item Q: why *\tit{met dat} (but \tit{daar mee})? \pause\\
+      A: \tit{daar mee} is the default, \tit{met dat} only appears under special circumstances (morphological derivation, cf. \tit{mice} and not \tit{mouse-s})\pause
+      \item Q: why does the adposition change form? \pause\\
+      A: \tit{mee} and \tit{met} are stored as different forms in the lexicon \pause
+      \item Q: why does the adposition change position? \pause\\
+      A: \tit{mee} and \tit{met} are stored as preposition or postposition in the lexicon \pause
+      \item Q: why is there an \tit{r}, even though there is no location involved? \pause\\
+      A: \tit{r} is ambiguous between \tsc{thing} and \tsc{location}
+    \end{enumerate}
+
+\end{frame}
+
+
 \end{document}
